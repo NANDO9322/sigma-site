@@ -170,17 +170,18 @@ div#layout{
     justify-content: space-around;
     background:var(--corFundo1);
     text-align: left; 
-     padding-top: 12px; 
-     transition:400ms;
-     visibility: hidden;
-     height: 0px;
-     overflow: hidden;
- }
- .flex3 h5{
-   font-size: 14px;
-   text-align: left;
-   margin-left: 30px;
- }
+    padding-top: 12px; 
+    transition:400ms;
+    visibility: hidden;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .flex3 h5{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 30px;
+  }
 
   #toggle-menu:checked ~ .flex3 {
     height: 160px;
