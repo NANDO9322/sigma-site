@@ -42,7 +42,7 @@ width: 30%;
 .flex-item2{
   display:flex;
  width: 70%; 
- justify-content:space-around;
+ justify-content:flex-end;
  background:var(--corFundo1);
 }
 #pesquisar{
@@ -58,8 +58,10 @@ background: var(--corInput);
   display:flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-around;
-  color:#da1515;
+  justify-content:space-between;
+  color:#fff;
+  cursor:pointer;
+  font-size: 25px !important;
 }
 .flex3{
    display:flex;
@@ -144,3 +146,21 @@ div#layout{
   border-radius: 5px;
   margin-bottom: 0.5rem;}
 
+
+  .main-container{
+    width:95%;
+    max-width: 1100px;
+    margin: auto;
+    /* outline: 1px solid red; */
+  }
+
+  .search-icon{
+    position: absolute;
+    right:0;
+    z-index: 1;
+  }
+
+  .search-input{
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
