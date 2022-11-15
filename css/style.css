@@ -1,195 +1,298 @@
-:root{
-    --corFundo1:#0a0a0a;
-    --corFundo2:#fcf6f6;
+/*Observe as marcações antes de colar os códigos*/
+:root{/*variaveis*/
+    --corFundo1:#000000;
+    --corFundo2:#fafcf6;
+    --corFundo3:#13052c;
     --corInput:#d6d3d3;
     --corMenus:#d6d3d3;
+    --tamanhoLogo:180px;
+    --tamanhoMenu:60px;
+    --corBotao:#27ac2e;
+
 }
-body {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-width: 100%;
-display:grid;
-grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
-gap:2px;
+body { /*Configuração layout Grid*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    gap:2px;
 }
-.headerGrid{
+.headerGrid{/*Configuração layout Grid*/
     grid-area: 1/1/3/12;
-    background: var(--corFundo1);
     color:var(--corMenus);
+    background: var(--corFundo1);
 }
-.mainGrid{
+      .flex1{/*container de layout principal do Header*/
+        display:flex;
+        flex-direction: row;
+        text-decoration: none;
+      }
+          .flex-item1{/*Item do layout principal do Header(((LOGO)))*/
+            width: 45%;
+          }
+          .flex-item1 a{ /* Item do layout principal do Header(((TEXTO DO LOGO)))*/
+            text-decoration: none;
+            color:rgb(254, 255, 255);
+            font-size: 50px;
+            text-align:start;
+          }
+          .flex-item1 a:hover{ /* Item do layout principal do Header(((TEXTO DO LOGO)))*/
+            color:rgb(255, 254, 254);
+
+          }
+          .tamanhoIconesLogo{
+          width: var(--tamanhoLogo);
+          }
+          .tamanhoIconesMenu{
+          width: var(--tamanhoMenu);
+
+          }
+          .flex-item2{/*Item do layout principal do Header(((MENUS)))*/
+            width: 65%; 
+            background:var(--corFundo1);
+          }
+          #flex-item2-1{/*SubItem do layout principal do Header(((NAV)))*/
+            display:flex;
+            justify-content: flex-end;
+            margin-right: 15px;
+          }
+          .centralizacao{/*(((ICONE MENU HAMBURGUER)))*/
+            align-self: center;
+          }
+              .overlay {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: rgb(0,0,0);
+              background-color: rgba(0,0,0, 0.5);
+              overflow-x: hidden;
+              transition: 0.5s;
+
+              }
+              .overlay-content {
+              position: relative;
+              top: 25%;
+              width: 100%;
+              text-align: left;
+              margin-top: 30px;
+              }
+              .overlay li a {
+              padding: 8px;
+              text-decoration: none;
+              font-size: 20px;
+              color:var(--corMenus);
+              display: block;
+              transition: 0.3s;
+              }
+              #close{
+              color:var(--corMenus);
+              text-decoration: none;
+              }
+              .overlay .closebtn {
+              position: absolute;
+              top: 20px;
+              right: 45px;
+              font-size: 30px;
+              }
+
+          .flex-item3{/*Item do layout principal do Header(((CAMPO DE PESQUISA)))*/
+            display:flex;
+            justify-content: end;
+          }
+          #pesquisar{/*(((CAMPO DE PESQUISA)))*/
+            width: 390px;
+            margin-right: 20px;
+          }
+          .corMenus{/*(((COR DOS TEXTOS DO MENU PRINCIPAL)))*/
+            color: var(--corMenus);
+          }
+.mainGrid{/*Configuração layout Grid*/
     grid-area: 4/1/8/12;
     background: var(--corFundo2);
     font-size: 12px;
     color:var(--corMenus);   
 }
-.footerGrid{
+/*********************************************ATENÇÃO*************************************************/
+/*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI/*/
+
+/*PÁGINA 1 (inicial), COLAR AQUI EM BAIXO.deixar alinhado a partir do simbolo de "+"
+      +                                   */
+      div#layout{
+        color: #0a0a0a;
+        background-color: white;
+      }
+      .jss232 {
+        padding: 0.5rem;
+        background: #f1f1f1;
+        column-count: 2;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;}
+      
+      
+
+/*PÁGINA 2 (produtos), COLAR AQUI EM BAIXO.
+      +                                   */
+      .main-container{
+        width:95%;
+        max-width: 1100px;
+        margin: auto;
+        /* outline: 1px solid red; */
+      }
+      
+      .main-container2{
+        width:95%;
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 46px;
+        margin-bottom: -40px;
+        /* outline: 1px solid red; */
+      }
+      
+      .search-icon{
+        position: absolute;
+        right:0;
+        z-index: 1;
+      }
+
+      .search-input{
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+      }
+
+      .icon-toggle{
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--corFundo1);
+        padding: 4px 33px;
+        border-radius: 5px;
+        cursor:pointer;
+      }
+
+
+      .flex3{
+        display:flex;
+        font-size: 12px;
+        flex-direction: row; 
+        justify-content: space-around;
+        background:var(--corFundo1);
+        text-align: left; 
+        padding-top: 12px; 
+        transition:400ms;
+        visibility: hidden;
+        height: 0px;
+        overflow: hidden;
+      }
+
+      .flex3 h5{
+        font-size: 14px;
+        text-align: left;
+        margin-left: 30px;
+      }
+
+      #toggle-menu:checked ~ .flex3 {
+        height: 160px;
+        visibility: visible;
+      }
+
+      .container {
+        max-width: 960px;
+      }
+      
+      .lh-condensed { line-height: 1.25; }
+
+      .flex-pai{
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+/*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
+      +                                   */      
+
+/*PÁGINA 4 (pagamento), COLAR AQUI EM BAIXO.
+      +                                   */      
+
+/*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
+      +                                   */
+      .flex1Finalizacao{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        width: 100%;
+        height: auto;
+        margin:auto;  
+      }
+          .borda{/*borda do conteúdo central(form)*/
+            background:var(--corFundo2);
+            width: 100%;
+            height: auto;
+            padding: 50px 0px 0 0px;
+          }
+          .flex1Finalizacao form div{/*alinhamento da imagem, textos e botões ao centro*/
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 0px;
+            width: 100%;
+          }
+          #imagem{/*tamanho imagem*/
+            width: 150px;
+            margin:auto;
+          }         
+          #tamanho{/*tamanho da fonte do texto*/
+            height: 160px;
+            padding-top: 10px;
+            background-color: rgb(8, 8, 8, 0.6);
+            text-align: center;
+            font-size:16px;
+          }
+          #verMinhasCompras{/*botão ver em minhas compras*/
+            background:var(--corBotao);
+            border-color:rgb(21, 138, 36);
+            color:rgb(253, 253, 253);
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px 15px;
+          }
+
+/*********************************************ATENÇÃO*************************************************/
+      .flex3{/*CONTAINER DO MAIN(((MENUS INFERIORES)))*/
+        display:flex;
+        width: 100%;
+        font-size: 12px;
+        flex-direction: row; 
+        justify-content: space-around;
+        background:var(--corFundo1);
+        text-align: left; 
+        padding-top: 12px; 
+        margin-top: 4px;
+      }
+      .alinhamento1{/*MENUS INFERIORES DO "MAIN" ALINHAMENTO PARAGRAFO*/
+        font-size: 14px;
+        text-align: left;
+        margin:0 0 5px 13px;
+      }
+      .alinhamento2{/*MENUS INFERIORES DO "MAIN" ALINHAMENTO LISTAS NÃO-ORDENADAS((UL))*/
+      text-align: left;
+      padding-left: 13px;
+      }
+.footerGrid{/*Configuração layout Grid*/
     grid-area: 9/1/10/12;
     background: var(--corFundo1);
     font-size: 12px;
     color:var(--corMenus);
     padding-top: 15px;
+    padding-left: 15px;
 }
-.flex1{
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-}
-.flex-item1{
-width: 30%;
-}
-.flex-item2{
-  display:flex;
- width: 70%; 
- justify-content:flex-end;
- background:var(--corFundo1);
-}
-#pesquisar{
-background: var(--corInput);
-}
-.corMenus{
-  color: var(--corMenus);
-}
-.alinhamentoMenus{
-  margin-right: 50px;
-}
-.flex2{
-  display:flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content:space-between;
-  color:#fff;
-  cursor:pointer;
-  font-size: 25px !important;
-}
+      .flex4{/*MENUS DO FOOTER*/
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+      }
 
-.flex4{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#size{
-  width: 70%;
-  align-items: flex-end;
-  justify-content: first baseline; 
-}
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: left;
-    margin-top: 30px;
-  }
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 30px;
-  }
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
-
-div#layout{
-  color: #0a0a0a;
-  background-color: white;
-}
-
-
-
-.jss232 {
-  padding: 0.5rem;
-  background: #f1f1f1;
-  column-count: 2;
-  border-radius: 5px;
-  margin-bottom: 0.5rem;}
-
-
-  .main-container{
-    width:95%;
-    max-width: 1100px;
-    margin: auto;
-    /* outline: 1px solid red; */
-  }
-
-  .search-icon{
-    position: absolute;
-    right:0;
-    z-index: 1;
-  }
-
-  .search-input{
-    border-top-left-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
-  }
-
-  .icon-toggle{
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--corFundo1);
-    padding: 4px 33px;
-    border-radius: 5px;
-    cursor:pointer;
-  }
-
-
-  .flex3{
-    display:flex;
-    font-size: 12px;
-    flex-direction: row; 
-    justify-content: space-around;
-    background:var(--corFundo1);
-    text-align: left; 
-    padding-top: 12px; 
-    transition:400ms;
-    visibility: hidden;
-    height: 0px;
-    overflow: hidden;
-  }
-
-  .flex3 h5{
-    font-size: 14px;
-    text-align: left;
-    margin-left: 30px;
-  }
-
-  #toggle-menu:checked ~ .flex3 {
-    height: 160px;
-    visibility: visible;
-  }
-
-  .container {
-    max-width: 960px;
-  }
-  
-  .lh-condensed { line-height: 1.25; }
+/*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
+                      /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
+                                                    /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
