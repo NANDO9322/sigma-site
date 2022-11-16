@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalização</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <header class="headerGrid">
+    <div class="main-container">
+
+      <div id="box2">
+        <div class="flex1">
+          <!--Container menu pricipal-->
+          <div class="flex-item1">
+            <!--lOGO DO SIGMA NO MENU PRINCIPAL-->
+            <a href="pagina-inicial.html"><img src="img/logo11.jpeg" class="tamanhoIconesLogo" alt="logo sigma">Sigma</a>
+          </div>
+          <div class="flex-item2">
+            <!--Container Menus e barra de pesquisa-->
+            <div>
+              <!--CONTÊM ICONES DO LOGIN, FAVORISTOS, CARRINHO, MENU HAMBURGUER DO MENU PRINCIPAL-->
+              <nav class="navbar navbar-expand-lg bg-black">
+                <div id="flex-item2-1" class="collapse navbar-collapse">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <!--ICONE DO LOGIN NO MENU PRINCIPAL-->
+                      <a class="nav-link" href="#"><img src="img/usuario.jpeg" class="tamanhoIconesMenu"
+                          alt="Login de usuário"><span class="corMenus">Login</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <!--ICONE DO LOGIN NO MENU FAVORITOS-->
+                      <a class="nav-link active" aria-current="page" href="#"><img src="img/favoritos.jpeg"
+                          class="tamanhoIconesMenu" alt="favoritos"><span class="corMenus">Favoritos</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <!--ICONE DO CARRINHO NO MENU PRINCIPAL-->
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="img/carrinho.jpeg" class="tamanhoIconesMenu"
+                          alt="carrinho de compras">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item 1</a></li>
+                        <li><a class="dropdown-item" href="#">Item 2</a></li>
+                        <li><a class="dropdown-item" href="#">Item 3</a></li>
+                      </ul>
+                    </li>
+                    <li id="myNav" class="overlay">
+                      <!--ICONE DO MENU HARBURGUER NO MENU PRINCIPAL-->
+                      <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
+                      <ul class="overlay-content">
+                        <li><a href="pagina-inicial.html">Início</a></li>
+                        <li><a href="pagina-produto.html">Produtos</a></li>
+                        <li><a href="3_carrinho.html">Carrinho</a></li>
+                        <li><a href="pagina-pagamento-01.html">Pagamentos</a></li>
+                        <li><a href="pagina-finalização.html">Finalização</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                      </ul>
+                    </li>
+                    <li class="centralizacao">
+                      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/menuHamburgue.jpeg"
+                          class="tamanhoIconesMenu" alt="menu principal"></span>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            
+            <div class="flex-item3">
+              <!--BARRA DE PESQUISA DO MENU PRINCIPAL-->
+              <form id="pesquisar">
+                <div id="size" class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend search-icon">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                        </path>
+                      </svg>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control search-input" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar" id="pesquisar">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mainGrid">
+    <div class="main-container">
+
+      <div class=flex1Finalizacao>
+        <form class="borda">
+          <div class="card" style="width: 18rem;">
+            <img src="img/pagina-finalizacao/computador" class="card-img-top" alt="computador" id="imagem">
+          </div>
+          <div id="tamanho" class="card-body">
+            <p class="card-text">Seu <Strong>Pedido Nº: 0015489</Strong> está sendo preparado, chegará até o dia:
+              <strong>21/11/2022</strong><br><br>
+
+              Endereço: Rua Antônio contarato de souza, numero: 698, bairro do goytacazes, Arapiraca/AL.</p>
+            <button id="verMinhasCompras">Ver Minhas Compras</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="main-container2">
+      <div class="position-relative">
+        <input id="toggle-menu" type="checkbox" class="d-none" />
+        <!-- ultilizado para controlar o estado de aberto e fechado do botao de mais informações -->
+        <label for="toggle-menu" class="icon-toggle position-absolute">Mais detalhes</label>
+        <nav class="flex3 w-100">
+        <nav>
+          <p class="alinhamento1">Sobre o</p>
+          <ul class="alinhamento2">
+            <li> Sigma Hardware</li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="alinhamento1">Contato</p>
+          <ul class="alinhamento2">
+            <li>Comprar</li>
+            <li>Vender</li>
+            <li>Solução de Problemas</li>
+            <li>Segurança</li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="alinhamento1">Redes Sociais</p>
+          <ul class="alinhamento2">
+            <li>Twiter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="alinhamento1">Minha Conta</p>
+          <ul class="alinhamento2">
+            <li>Resumo</li>
+            <li>Favoritos</li>
+            <li>Vender</li>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+  </main>
+  <footer class="footerGrid mt-5">
+    <div class="main-container">
+      <ul class="flex4">
+        <li class="listas">Termos e condições</li>
+        <li class="listas">Como cuidamos de sua privacidade</li>
+        <li class="listas">Acessibilidade</li>
+        <li class="listas">Contato</li>
+        <li class="listas">Informações sobre seguros</li>
+      </ul>
+
+      <p class="text-center mt-5 mb-3"> Copyright © 2022 LTDA </p>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</html>

@@ -90,23 +90,23 @@
     });
 
 
-    // Product Quantity
-    $('.quantity button').on('click', function () {
-        var button = $(this);
-        var oldValue = button.parent().parent().find('input').val();
-        if (button.hasClass('btn-plus')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        button.parent().parent().find('input').val(newVal);
-    });
+//      Product Quantity
+//     $('.quantity button').on('click', function () {
+//         var button = $(this);
+//         var oldValue = button.parent().parent().find('input').val();
+//         if (button.hasClass('btn-plus')) {
+//             var newVal = parseFloat(oldValue) + 1;
+//         } else {
+//             if (oldValue > 0) {
+//                 var newVal = parseFloat(oldValue) - 1;
+//             } else {
+//                 newVal = 0;
+//             }
+//         }
+//         button.parent().parent().find('input').val(newVal);
+//     });
     
-})(jQuery);
+// })(jQuery);
 
 //3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO
 
@@ -5907,4 +5907,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
+  })
