@@ -109,12 +109,12 @@ body { /*Configuração layout Grid*/
           .corMenus{/*(((COR DOS TEXTOS DO MENU PRINCIPAL)))*/
             color: var(--corMenus);
           }
-.mainGrid{/*Configuração layout Grid*/
-    grid-area: 4/1/8/12;
-    background: var(--corFundo2);
-    font-size: 12px;
-    color:var(--corMenus);   
-}
+          .mainGrid{/*Configuração layout Grid*/
+            grid-area: 4/1/8/12;
+            background: var(--corFundo2);
+            font-size: 12px;
+            color:var(--corMenus);   
+          }
 /*********************************************ATENÇÃO*************************************************/
 /*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI/*/
 
@@ -146,11 +146,13 @@ body { /*Configuração layout Grid*/
         width:95%;
         max-width: 1100px;
         margin: auto;
-        margin-top: 46px;
-        margin-bottom: -40px;
+        margin-top: 90px;
+        margin-bottom: -50px;
         /* outline: 1px solid red; */
       }
-      
+      .cursor-type{
+        cursor: not-allowed;
+      }
       .search-icon{
         position: absolute;
         right:0;
@@ -197,13 +199,12 @@ body { /*Configuração layout Grid*/
         height: 160px;
         visibility: visible;
       }
-
       .container {
         max-width: 960px;
+      }      
+      .lh-condensed {
+        line-height: 1.25;
       }
-      
-      .lh-condensed { line-height: 1.25; }
-
       .flex-pai{
         display: flex;
         justify-content: space-between;
@@ -215,7 +216,16 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 4 (pagamento), COLAR AQUI EM BAIXO.
       +                                   */      
-
+      .elemento-pai{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+      }
+      
+      .imagem{/*tamanho imagem*/
+        width: 150px;
+        margin:auto;
+      }     
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
       +                                   */
       .flex1Finalizacao{
@@ -226,37 +236,37 @@ body { /*Configuração layout Grid*/
         height: auto;
         margin:auto;  
       }
-          .borda{/*borda do conteúdo central(form)*/
-            background:var(--corFundo2);
-            width: 100%;
-            height: auto;
-            padding: 50px 0px 0 0px;
-          }
-          .flex1Finalizacao form div{/*alinhamento da imagem, textos e botões ao centro*/
-            margin: auto;
-            margin-bottom: 30px;
-            border-radius: 0px;
-            width: 100%;
-          }
-          #imagem{/*tamanho imagem*/
-            width: 150px;
-            margin:auto;
-          }         
-          #tamanho{/*tamanho da fonte do texto*/
-            height: 160px;
-            padding-top: 10px;
-            background-color: rgb(8, 8, 8, 0.6);
-            text-align: center;
-            font-size:16px;
-          }
-          #verMinhasCompras{/*botão ver em minhas compras*/
-            background:var(--corBotao);
-            border-color:rgb(21, 138, 36);
-            color:rgb(253, 253, 253);
-            font-size: 20px;
-            border-radius: 10px;
-            padding: 10px 15px;
-          }
+      .borda{/*borda do conteúdo central(form)*/
+        background:var(--corFundo2);
+        width: 100%;
+        height: auto;
+        padding: 50px 0px 0 0px;
+      }
+      .flex1Finalizacao form div{/*alinhamento da imagem, textos e botões ao centro*/
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: 0px;
+        width: 100%;
+      }
+      #imagem{/*tamanho imagem*/
+        width: 150px;
+        margin:auto;
+      }         
+      #tamanho{/*tamanho da fonte do texto*/
+        height: 160px;
+        padding-top: 10px;
+        background-color: rgb(8, 8, 8, 0.6);
+        text-align: center;
+        font-size:16px;
+      }
+      #verMinhasCompras{/*botão ver em minhas compras*/
+        background:var(--corBotao);
+        border-color:rgb(21, 138, 36);
+        color:rgb(253, 253, 253);
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px 15px;
+      }
 
 /*********************************************ATENÇÃO*************************************************/
       .flex3{/*CONTAINER DO MAIN(((MENUS INFERIORES)))*/
@@ -279,20 +289,20 @@ body { /*Configuração layout Grid*/
       text-align: left;
       padding-left: 13px;
       }
-.footerGrid{/*Configuração layout Grid*/
-    grid-area: 9/1/10/12;
-    background: var(--corFundo1);
-    font-size: 12px;
-    color:var(--corMenus);
-    padding-top: 15px;
-    padding-left: 15px;
-}
+      .footerGrid{/*Configuração layout Grid*/
+        grid-area: 9/1/10/12;
+        background: var(--corFundo1);
+        font-size: 12px;
+        color:var(--corMenus);
+        padding-top: 15px;
+        padding-left: 15px;
+      }
       .flex4{/*MENUS DO FOOTER*/
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
       }
 
-/*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
-                      /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
-                                                    /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))
+/*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))*/
+                      /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))*/
+                                                    /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))*/
