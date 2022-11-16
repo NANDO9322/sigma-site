@@ -66,7 +66,6 @@ body { /*Configuração layout Grid*/
               z-index: 1;
               top: 0;
               right: 0;
-              background-color: rgb(0,0,0);
               background-color: rgba(0,0,0, 0.5);
               overflow-x: hidden;
               transition: 0.5s;
@@ -97,7 +96,7 @@ body { /*Configuração layout Grid*/
               right: 45px;
               font-size: 30px;
               }
-
+          
           .flex-item3{/*Item do layout principal do Header(((CAMPO DE PESQUISA)))*/
             display:flex;
             justify-content: end;
@@ -114,6 +113,9 @@ body { /*Configuração layout Grid*/
             background: var(--corFundo2);
             font-size: 12px;
             color:var(--corMenus);   
+          }
+          .btn-style{
+            border-radius: 20%;
           }
 /*********************************************ATENÇÃO*************************************************/
 /*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI/*/
@@ -226,6 +228,24 @@ body { /*Configuração layout Grid*/
         width: 150px;
         margin:auto;
       }     
+      .texto-cor{
+        color: black;
+      }
+      .elemento-pai{
+        display: flex;
+        align-content: space-between;
+        flex-direction: row;
+        outline: red 1px solid;
+      }
+      .elemento-filho{
+        outline: red 1px solid;
+
+      }
+
+      .negrito{
+        font-weight: bold;
+      }
+
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
       +                                   */
       .flex1Finalizacao{

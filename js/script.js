@@ -5898,6 +5898,7 @@ const getBrazilStatesAndCityes = () => {
     })
   })
 
+
 //  5_FINALIZAÇÃO//  5_FINALIZAÇÃO//  5_FINALIZAÇÃO//  5_FINALIZAÇÃO//  5_FINALIZAÇÃO//  5_FINALIZAÇÃO
 function openNav() {
   document.getElementById("myNav").style.width = "20%";
