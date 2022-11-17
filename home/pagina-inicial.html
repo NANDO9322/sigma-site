@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Modelo</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+  <script src="js/cabecalho.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"crossorigin="anonymous"></script>
+
+  <!--<link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>-->
+
+  <!-- TELA PRODUTO Font Awesome -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- TELA PRODUTO Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <style>
+   @media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+  </style>
+</head>
+
+
+<body>
+  <header class="headerGrid">
+    <div class="flex1">
+      <div class="flex-item1">
+        <a><img src="imagens/logo_branco-removebg-preview.png" width="200" alt="Logo da Sigma Hardware"></a>
+      </div>
+      <div class="flex-item2">
+        <nav class="navbar navbar-expand-lg bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                fill="currentColor" color="purple" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                </path>
+              </svg> <span class="corMenus"> Minha Conta/Entrar</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <div class="alinhamentoMenus">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="40" height="40" fill="currentColor" color="#cd4141" class="bi bi-heart"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+                      </path>
+                    </svg> <span class="corMenus"> Favoritos</span></a>
+                </li>
+              </div>
+              <div class="alinhamentoMenus">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                      color="white" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+                      </path>
+                    </svg><span class="corMenus"> Modo Escuro</span></a>
+                </li>
+              </div>
+              <div class="alinhamentoMenus">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-cart4"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="green"
+                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                        </path>
+                      </svg></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </div>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+
+    <form>
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="#">Compras</a>
+          <a href="#">Produtos</a>
+          <a href="#">Minha Conta</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+      <div class="flex2">
+        <div>
+          <span style="font-size:40px;cursor:pointer" onclick="openNav()">☰ Departamentos</span>
+        </div>
+        <div id="size" class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm"><svg xmlns="http://www.w3.org/2000/svg" width="17"
+                height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg></span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar" id="pesquisar">
+        </div>
+      </div>
+    </form>
+  </header>
+  <main class="mainGrid">
+    <div id="container">
+      <div class="container text-center my-3" >
+        <h2 class="font-weight-light">Recomendações</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/pad1.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body " >
+                              <h5 class="card-title">MOUSEPAD REDRAGON HIGH SPEED GAMER KUNLUN LARGE-SIZED880X420X4MM, P006A</h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 109,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 129,29</h5>
+                              <h6>em até 12x de R$ 10,77 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/teclado.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title">TECLADO GAMING REDRAGON KUMARA MECANICO RGB SWITCH AZUL, K552RGB-1</h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 339,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 399,88</h5>
+                              <h6>em até 12x de R$ 33,32 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/pro.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body " >
+                              <h5 class="card-title">PROCESSADOR AMD RYZEN 5 5600, 6-CORE, 12-THREADS, 3.5GHZ (4.4GHZ TURBO), CACHE 35MB, AM4, 100-100000927BOX</h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 999,01</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 1.175,30</h5>
+                              <h6>em até 12x de R$ R$ 97,94 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/mae.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body " >
+                              <h5 class="card-title">PLACA MAE ASUS TUF GAMING B550M-PLUS DDR4 SOCKET AM4 CHIPSET AMD B550</h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 1.200,00</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 1.411,76</h5>
+                              <h6>em até 12x de R$ 117,65 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/vga.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body " >
+                              <h5 class="card-title">PLACA DE VIDEO GALAX GEFORCE RTX 3060TI 1-CLICK OC, LHR, 12GB, GDDR6, 192-BIT, 36NOL7MD1VOC-NAC</h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 2.449,99</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 2.817,49</h5>
+                              <h6>em até 12x de R$ 234,80 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                          <div class="card" style="width: 18rem;">
+                            <div class="image-si">
+                              <img src="imagem/fonte.jpg" class="card-img-top image-si" alt="...">
+                            </div>
+                            <div class="card-body " >
+                              <h5 class="card-title">FONTE CORSAIR SF SERIES MODULAR SF600 PLATINUM 80 PLUS, CP-9020182-WW
+                              </h5>
+                              <h6>à vista</h6>
+                              <h5>R$ 999,01</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 1.175,30</h5>
+                              <h6>em até 12x de R$ R$ 97,94 sem juros no cartão</h6>
+                            </div>
+                          </div>
+                        </div>
+                    </div>                
+                </div>
+                  <div>             
+                  <a class="carousel-control-prev alinhamento  bg-black carroseu-brabu-left"  href="#recipeCarousel" role="button" data-bs-slide="prev">
+                    <
+                  </a>
+                  <a class="carousel-control-next alinhamento  bg-black carroseu-brabu-right"  href="#recipeCarousel" role="button" data-bs-slide="next">
+                    >
+                  </a>  
+                </div> 
+            </div>    
+        </div>
+      </div>
+
+      <!--Acaba o Recomendado-->
+
+      <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+            
+            <!-- Shop Sidebar End -->
+
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-13 col-md-17">
+                <div class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search by name">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-transparent text-primary">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="dropdown ml-4">
+                                <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Sort by
+                                        </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Latest</a>
+                                    <a class="dropdown-item" href="#">Popularity</a>
+                                    <a class="dropdown-item" href="#">Best Rating</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="imagem/gab.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                              <h5 class="card-title">GABINETE NZXT H210 PRETO/VERMELHO, CA-H210B-BR</h5>
+                                <div class="card-body">
+                                  <h6>à vista</h6>
+                                  <h5>R$ 769,90</h5>
+                                  <h6>no PIX com 15% desconto</h6>
+                                  <h5>R$ 905,77</h5>
+                                  <h6>em até 12x de R$ 75,48 sem juros no cartão</h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/cad.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">CADEIRA GAMER DELUX COPA DO MUNDO CATAR MT-2000 BRLS BRASIL, AZUL, VERDE E AMARELO, CP-CH-9006</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 989,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 1.164,59</h5>
+                              <h6>em até 12x de R$ 97,05 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/mon.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">MONITOR GAMER AOC LEGEND C27G2ZE, 27 POL. VA, FHD, 0.5MS, 240HZ, FREESYNC PREMIUM, HDMI/DP, C27G2ZE</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 1.779,00</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 2.092,94</h5>
+                              <h6>em até 12x de R$ 174,41 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/wat.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">WATER COOLER DEEPCOOL CASTLE 240EX A-RGB, 240MM, PRETO, DP-GS-H12W-CSL240EX-AR</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 579,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 682,24</h5>
+                              <h6>em até 12x de R$ 56,85 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/fone.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">HEADSET GAMER CORSAIR VIRTUOSO RGB WIRELESS XT, DRIVERS 50MM, CINZA, CA-9011188-NA</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 2.442,64</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 2.873,69</h5>
+                              <h6>em até 12x de R$ 239,47 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/memo1.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">MEMORIA REDRAGON RAGE, 16GB (1X16GB), DDR4, 3200MHZ, C16, VERMELHA, GM-702</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 314,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 370,47</h5>
+                              <h6>em até 12x de R$ 30,87 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/note.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                          <h5 class="card-title">NOTEBOOK GAMER GIGABYTE G5 KD, INTEL I5-11400H, 15.6, FHD 144HZ, 16GB DDR4, SSD 512GB M.2, RTX 3060 6GB, KD-52BR123SD</h5>
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 6.599,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 7.764,59</h5>
+                              <h6>em até 12x de R$ 647,05 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/xbox.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">            
+                          <h5 class="card-title">CONSOLE MICROSOFT XBOX SERIES S, 512GB</h5>                          
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 1.899,00</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 2.183,85</h5>
+                              <h6>em até 12x de R$ 181,99 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/ssd.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">            
+                          <h5 class="card-title">SSD TEAM GROUP MP33 PRO 1TB M.2 NVME PCIE, TM8FPD001T0C101</h5>                          
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 650,00</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 764,70</h5>
+                              <h6>em até 12x de R$ 63,73 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/intel.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">            
+                          <h5 class="card-title">PROCESSADOR INTEL CORE I3-12100F, 4-CORE, 8-THREADS, 3.3GHZ ( 4.3GHZ TURBO), CACHE 12MB, LGA1700, BX8071512100F</h5>                          
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 639,99</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 752,93</h5>
+                              <h6>em até 12x de R$ 62,74 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/mae1.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">            
+                          <h5 class="card-title">PLACA MAE MSI PRO H610M-G, DDR4, SOCKET LGA 1700, M-ATX, CHIPSET INTEL H610, PRO-H610M-G</h5>                          
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 599,00</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 704,71</h5>
+                              <h6>em até 12x de R$ 58,73 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 pb-1">
+                      <div class="card product-item border-0 mb-4">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="imagem/fil.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">            
+                          <h5 class="card-title">FILTRO DE LINHA DPS CLAMPER ICLAMPER ENERGIA 5 TOMADAS, 1M, PRETO, 021517</h5>                          
+                            <div class="card-body">
+                              <h6>à vista</h6>
+                              <h5>R$ 55,90</h5>
+                              <h6>no PIX com 15% desconto</h6>
+                              <h5>R$ 63,79</h5>
+                              <h6>em até 6x de R$ 10,63 sem juros no cartão</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Adicionar ao Carrinho</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fim Produtos
+                    -->
+                    <div class="col-12 pb-1">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination justify-content-center mb-3">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Shop Product End -->
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="flex3">
+      <div>
+        <h5>Sobre o</h5>
+        <ul>
+          <li> Sigma Hardware</li>
+          <li> </li>
+          <li> </li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li>Comprar</li>
+          <li>Vender</li>
+          <li>Solução de Problemas</li>
+          <li>Segurança</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Redes Sociais</h5>
+        <ul>
+          <li>Twiter</li>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Minha Conta</h5>
+        <ul>
+          <li>Resumo</li>
+          <li>Favoritos</li>
+          <li>Vender</li>
+        </ul>
+      </div>
+    </nav>
+    
+  </main>
+  <footer class="footerGrid">
+
+    <ul class="flex4">
+      <li class="listas">Trabalhe Conosco</li>
+      <li class="listas">Termos e condições</li>
+      <li class="listas">Como cuidamos de sua privacidade</li>
+      <li class="listas">Acessibilidade</li>
+      <li class="listas">Contato</li>
+      <li class="listas">Informações sobre seguros</li>
+    </ul>
+
+    <p> Copyright © 2022 LTDA.<br>
+      CNPJ n.º 02.005.001/0001-01 / Av. Habib Gabriel, 1360 Res. Olivio Benassi, Matão/SP - CEP 15990-000.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+
+</body>
+<script>
+  let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+
+</script>
+</html>
