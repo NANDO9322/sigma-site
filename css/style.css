@@ -1,7 +1,7 @@
 /*Observe as marcações antes de colar os códigos*/
 :root{/*variaveis*/
   --corFundo1:#000000;
-  --corFundo2:#fafcf6;
+  --corFundo2:#fff;
   --corFundo3:#13052c;
   --corInput:#d6d3d3;
   --corMenus:#d6d3d3;
@@ -129,56 +129,6 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 1 (inicial), COLAR AQUI EM BAIXO.deixar alinhado a partir do simbolo de "+"
     +                                   */
-    @media (max-width: 767px) {
-      .carousel-inner .carousel-item>div {
-        display: none;
-      }
-
-      .carousel-inner .carousel-item>div:first-child {
-        display: block;
-      }
-    }
-
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      display: flex;
-    }
-
-    /* medium and up screens */
-    @media (min-width: 768px) {
-
-      .carousel-inner .carousel-item-end.active,
-      .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
-      }
-
-      .carousel-inner .carousel-item-start.active,
-      .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-      }
-    }
-
-    .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start {
-      transform: translateX(0);
-    }
-
-    div#layout{
-      color: #0a0a0a;
-      background-color: white;
-    }
-    .jss232 {
-      padding: 0.5rem;
-      background: #f1f1f1;
-      column-count: 2;
-      border-radius: 5px;
-      margin-bottom: 0.5rem;}
-    
-      .input-top{
-        height: 38px;
-      }
-
       
 
 /*PÁGINA 2 (produtos), COLAR AQUI EM BAIXO.
@@ -261,6 +211,13 @@ body { /*Configuração layout Grid*/
       justify-content: space-between;
     }
 
+    .produto-espacamento{
+      font-size: 10pt;
+    }
+    .adicionar-carrinho{
+      margin-left: 50px;
+    }
+
 
 /*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
     +                                   */      
@@ -322,6 +279,7 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
     +                                   */
+
     .flex1Finalizacao{
       display: flex;
       flex-wrap: wrap;
@@ -347,9 +305,9 @@ body { /*Configuração layout Grid*/
       margin:auto;
     }         
     #tamanho{/*tamanho da fonte do texto*/
-      height: 160px;
+      height: 200px;
       padding-top: 10px;
-      background-color: rgb(8, 8, 8, 0.6);
+      background-color: #f1f1f1;
       text-align: center;
       font-size:16px;
     }
@@ -361,6 +319,22 @@ body { /*Configuração layout Grid*/
       border-radius: 10px;
       padding: 10px 15px;
     }
+
+    .foto-f{
+      width: 25rem !important;
+      height: 20rem !important;
+      background-color: var(--corFundo2) !important;
+    }
+    .foto-fa{
+      height: 15rem!important; 
+      width: 20rem !important;
+      background-color: var(--corFundo2) !important;
+    }
+
+    button a{
+      color: white;
+    }
+
 
 /*********************************************ATENÇÃO*************************************************/
     .flex3{/*CONTAINER DO MAIN(((MENUS INFERIORES)))*/
