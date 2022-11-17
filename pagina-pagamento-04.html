@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
+    <title>Pagamento 4</title>
     <link type="image/png" sizes="96x96" rel="icon" href="img/favicon.svg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
   </head>
 
 
   <body>
     <header class="headerGrid">
       <div class="main-container">
-  
+
         <div id="box2">
           <div class="flex1">
             <!--Container menu pricipal-->
@@ -106,159 +104,156 @@
 
     <main class="mainGrid">
       <div class="main-container">
-          
 
-          <div id="box" > 
-            <nav class="pagination-lg">
-                
-              <ul class="pagination justify-content-center cursor-type form-pag">
 
-                  <li class="page-item active"><span class="page-link pag-cent">Informações Pessoais</span></li>
-                  <li class="page-item"><span class="page-link pag-cent">Formas de Entrega</span></li>
-                  <li class="page-item"><span class="page-link pag-cent">Visão geral do Pedido</span></li>
-                  <li class="page-item"><span class="page-link pag-cent">Forma de Pagamento</span></li>
-                </ul>
-            </nav>
-          
-          
-            <form class="content position-relative">
-                
-                <!-- linha -->
-              <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="nome">Nome *</label>
-                      <input type="text" class="form-control" id="nome" required>
-                    </div>
+        <div id="box">
+          <nav class="pagination-lg">
+                  
+            <ul class="pagination justify-content-center cursor-type form-pag">
+                <li class="page-item"><span class="page-link pag-cent">Informações Pessoais</span></li>
+                <li class="page-item"><span class="page-link pag-cent">Formas de Entrega</span></li>
+                <li class="page-item"><span class="page-link pag-cent">Visão geral do Pedido</span></li>
+                <li class="page-item active"><span class="page-link pag-cent">Forma de Pagamento</span></li>
+              </ul>
+          </nav>
+
+          <div class="accordion" id="accordionExample">
+
+            <!-- acordeon pix -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="pix-acordeon">
+                <button class="accordion-button collapsed negrito" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-controls="collapseOne">
+                  Pix
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="pix-acordeon"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="main-container elemento-pai">
+                    <img src="img/pagina-pagamento/qr-code.svg" alt="qr code" class="imagem">
+                    <p class="cor-texto">
+                      00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/bced2fab-5d8f-4ebd-a31f-dee769d7a3e25204000053039865802BR5922SIGMA
+                      PAGAMENTOS LTDA6009SAO JOAOZINHO62070503***6304F04D</p>
                   </div>
-
-                  <div class="col-sm-6">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="sobrenome">Sobrenome</label>
-                      <input type="text" class="form-control" id="sobrenome">
-                    </div>
-                  </div>
+                </div>
               </div>
+            </div>
 
-              <!-- linha -->
-              <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="gender">Gênero</label>
-                      <Select type="text" class="form-control" id="gender">
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Outro">Outro</option>
-                        <option value="indeterminado">Prefiro não dizer</option>
-                      </select>
+            <!-- acordeon cartao de credito -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="card-acordeon">
+                <button class="accordion-button collapsed negrito" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Cartão de Crédito
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="card-acordeon"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="d-block my-3">
+                    <div class="form-control-plaintext custom-radio">
+                      <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="credito">Cartão de crédito</label>
+                    </div>
+
+                    <div class="form-control-plaintext custom-radio">
+                      <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="debito">Cartão de débito</label>
                     </div>
                   </div>
 
-                  <div class="col-sm-6">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="cpf">CPF *</label>
-                      <input type="text" class="form-control" id="cpf" onkeypress="$(this).mask('000.000.000-00');" required>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-nome" class="form-control-plaintext">Nome no cartão</label>
+                      <input type="text" class="form-control" id="cc-nome" required>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-numero" class="form-control-plaintext">Número do cartão</label>
+                      <input type="number" class="form-control" id="cc-numero" required maxlength="3">
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-expiracao" class="form-control-plaintext"
+                        onkeypress="$(this).mask('00/00/0000')">Data de expiração</label>
+                      <input type="text" class="form-control" id="cc-expiracao" required>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-cvv" class="form-control-plaintext">CVV</label>
+                      <input type="text" class="form-control" id="cc-cvv" required maxlength="3">
                     </div>
                   </div>
+
+                  </form>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <!-- linha -->
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-control-plaintext">
-                    <label class="font-tamanho" for="endereco">Endereço *</label>
-                    <input type="text" class="form-control" id="endereco" required>
-                  </div>
+        <!-- acordeon boleto -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="boleto-acordeon">
+            <button class="accordion-button collapsed negrito" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Boleto
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="boleto-acordeon"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="elemento-pai-boleto cor-texto">
+
+                <div class="elemento-filho-boleto" style="width: 50%;">
+                  <p>Número do pedido</p>
+                  <p>1187170384870194</p>
+                  <p>Utilize este código de barras e pague o boleto pelo celular ;)</p>
+
+                  <img src="img/codigoBarra.svg" width="30%" alt="">
                 </div>
 
-                  <div class="col-sm-4">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="bairro">Bairro *</label>
-                      <input type="text" class="form-control" id="bairro" required>
-                    </div>
-                  </div>
+                <div class="elemento-filho">
+                  
+                  <p>Sacola (1 item)</p>          
+                  <p>Total (produtos + frete): R$ 8,24</p>                
+                  <p>Entrega por Correios - Receba em até 20 dias úteis</p>                
+                  <p>Pagamento:</p>                
+                  <p>Boleto bancário (Vencimento: 17/11/2022)</p>
+                  
 
-                  <div class="col-sm-2">
-                    <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="codigo-postal">CEP *</label>
-                      <input type="text" class="form-control" id="codigo-postal" onkeypress="$(this).mask('00.000-000')" required>
-                    </div>
-                  </div>
-              </div>
-
-                <!-- linha -->
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-control-plaintext">
-                    <label class="font-tamanho" for="pais">País *</label>
-                    <select class="form-control" id="pais" required>
-                      <option value="">Selecione</option>
-                      <option value="brasil">Brasil</option>
-                      <option value="eua">Estados Unidos</option>
-                      <option value="mexico">Mexico</option>
-                      <option value="alemanha">Alemanha</option>
-                    </select>
-                  </div>
-                </div>  
-                
-                <div class="col-sm-3">
-                  <div class="form-control-plaintext">
-                    <label class="font-tamanho" for="estado">Estado *</label>
-                    <select class="form-control" id="estado" required>
-                        <option value="">Selecione</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="col-sm-3">
-                  <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="cidade">Cidade *</label>
-                      <select class="form-control" id="cidade" required></select>
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="phone">Telefone</label>
-                      <input type="text" class="form-control" id="phone" onkeypress="$(this).mask('(00) 0000-00009')">
-                  </div>
-                </div>
-
-                <!-- linha -->
-                <div class="col-sm-6">
-                  <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="email">E-Mail *</label>
-                      <input type="text" class="form-control" id="email" required>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="email">Confirmar E-mail *</label>
-                      <input type="text" class="form-control" id="email" required>
-                  </div>
+                  <button type="button" class="btn btn-default botao-pagamento">Imprimir boleto</button>
                 </div>
 
               </div>
-              
 
-              <div class="box-footer">
-                <div class="fa-pull-left">
-                    <button type="submit" class="btn btn-default botao-pagamento" href="pagina-produto.html">Voltar</button>
-                </div>
 
-                <div class="fa-pull-right">
-                    <button type="submit" class="btn btn-default botao-pagamento" href="pagina-pagamento-02.html">Avançar</button>
-                </div>
 
-              </div>
-            </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-footer">
+          <div class="fa-pull-left">
+              <button type="button" class="btn btn-default botao-pagamento" href="pagina-pagamento-02.html">Voltar</button>
+          </div>
+
+          <div class="fa-pull-right">
+              <button type="button" class="btn btn-default botao-pagamento" href="page-finalizacao.html">Avançar</button>
           </div>
 
         </div>
 
-        <div class="main-container2">
+      </div>
 
+      </div>
+
+      <div class="main-container2">
 
         <div class="position-relative">
           <input id="toggle-menu" type="checkbox" class="d-none" />

@@ -207,7 +207,7 @@ body { /*Configuração layout Grid*/
     #toggle-menu:checked ~ .flex3 {
       height: 160px;
       visibility: visible;
-      margin-bottom: 15px;
+      margin-bottom: 0.5rem;
     }
     .container {
       max-width: 960px;
@@ -244,6 +244,31 @@ body { /*Configuração layout Grid*/
 
     .form-pag{
       margin-top: 20px;
+    }
+    .cor-texto{
+      color: #000000;
+    }
+    .cor-texto-azul{
+      color: var(--corBotao);
+    }
+    .elemento-pai-boleto{
+      display: flex;
+      flex-direction: row;
+    }
+    .elemento-filho-boleto{
+      flex-shrink: 1;
+    }
+    .cor-underline{
+      text-decoration: underline;
+      margin-top: -15px;
+    }
+    .texto-endereco{
+      color: #000000;
+    }
+    .endereco-pai{
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
     }
 
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
