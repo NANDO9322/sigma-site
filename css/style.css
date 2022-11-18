@@ -477,8 +477,12 @@ body { /*Configuração layout Grid*/
     }
 
     .row a {
+      color: white;
+    }
+    .color-top a {
       color: black;
     }
+
 
     .jss232 {
       padding: 0.5rem;
