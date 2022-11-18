@@ -482,6 +482,9 @@ body { /*Configuração layout Grid*/
     .color-top a {
       color: black;
     }
+    .color-top-top{
+      color: black !important;
+    }
 
 
     .jss232 {
