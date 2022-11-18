@@ -5930,7 +5930,7 @@ function closeNav() {
                                 document.getElementById("myNav1").style.width = "0%";
                             }
 
-                            //  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO
+//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO
 function comparar(){
   if (document.getElementById("pf").checked){
        window.location.href = "./cadastro4-cpf.html";
