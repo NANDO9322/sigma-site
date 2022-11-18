@@ -612,6 +612,10 @@ body { /*Configuração layout Grid*/
               display:flex;
               padding-top: 5px;
             }   
+            #close1{
+              color:var(--corMenus);
+              text-decoration: none;
+              }
     }
     @media(max-width: 1000px) {
             #box2 {
