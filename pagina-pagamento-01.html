@@ -181,7 +181,7 @@
                   <div class="col-sm-6">
                     <div class="form-control-plaintext">
                       <label class="font-tamanho" for="gender">Gênero</label>
-                      <Select type="text" class="form-control" id="gender">
+                      <Select class="form-control" id="gender">
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
                         <option value="Outro">Outro</option>
@@ -227,9 +227,8 @@
                 <div class="col-sm-3">
                   <div class="form-control-plaintext">
                     <label class="font-tamanho" for="pais">País *</label>
-                    <select class="form-control" id="pais" required>
-                      <option value="">Selecione</option>
-                      <option value="brasil">Brasil</option>
+                    <select class="form-control" id="pais">
+                      <option value="brasil" selected>Brasil</option>
                       <option value="eua">Estados Unidos</option>
                       <option value="mexico">Mexico</option>
                       <option value="alemanha">Alemanha</option>
@@ -240,7 +239,7 @@
                 <div class="col-sm-3">
                   <div class="form-control-plaintext">
                     <label class="font-tamanho" for="estado">Estado *</label>
-                    <select class="form-control" id="estado" required>
+                    <select class="form-control" id="estado">
                         <option value="">Selecione</option>
                     </select>
                   </div>
@@ -249,7 +248,7 @@
                 <div class="col-sm-3">
                   <div class="form-control-plaintext">
                       <label class="font-tamanho" for="cidade">Cidade *</label>
-                      <select class="form-control" id="cidade" required></select>
+                      <select class="form-control" id="cidade"></select>
                   </div>
                 </div>
 
@@ -270,8 +269,8 @@
 
                 <div class="col-sm-6">
                   <div class="form-control-plaintext">
-                      <label class="font-tamanho" for="email">Confirmar E-mail *</label>
-                      <input type="text" class="form-control" id="email" required>
+                      <label class="font-tamanho" for="confirmar-email">Confirmar E-mail *</label>
+                      <input type="text" class="form-control" id="confirmar-email" required>
                   </div>
                 </div>
 
@@ -279,11 +278,11 @@
 
               <div class="box-footer">
                 <div class="fa-pull-left">
-                    <a type="submit" class="btn btn-default botao-pagamento" href="pagina-produto.html">Voltar</a>
+                    <a class="btn btn-default botao-pagamento" href="pagina-produto.html">Voltar</a>
                 </div>
 
                 <div class="fa-pull-right">
-                    <a type="submit" class="btn btn-default botao-pagamento" href="pagina-pagamento-02.html">Avançar</a>
+                    <a class="btn btn-default botao-pagamento" href="pagina-pagamento-02.html">Avançar</a>
                 </div>
 
               </div>
@@ -296,7 +295,7 @@
 
 
         <div class="position-relative">
-          <input id="toggle-menu" type="checkbox" class="d-none" />
+          <input id="toggle-menu" type="checkbox" class="d-none">
           <!-- ultilizado para controlar o estado de aberto e fechado do botao de mais informações -->
           <label for="toggle-menu" class="icon-toggle position-relative">Mais detalhes</label>
           <nav class="flex3 w-100">
