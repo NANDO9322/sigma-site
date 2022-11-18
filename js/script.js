@@ -5933,9 +5933,9 @@ function closeNav() {
 //  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO
 function comparar(){
   if (document.getElementById("pf").checked){
-       window.location.href = "./cadastro4-cpf.html";
+       window.location.href = "./pagina-01-cadastro-cpf.html";
       }
   else{
-      window.location.href = "./cadastro3-cnpj.html";
+      window.location.href = "./pagina-01-cadastro-cnpj.html";
       }
   }
