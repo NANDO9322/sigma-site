@@ -349,7 +349,166 @@ body { /*Configuração layout Grid*/
     button a{
       color: white;
     }
+/*PÁGINA 5 (Cadastro), COLAR AQUI EM BAIXO.
+    +                                   */
 
+    .container2 {
+      width:30%;
+      margin: auto;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background-color: rgba(190, 190, 190, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    .container3 {
+      width:30%;
+      margin:120px auto;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background-color: rgb(49, 48, 48);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    .flexBot{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-between;
+
+    }
+    .selecionar{
+      color: #e2e2e2; 
+    }
+    .selecionar2{
+      color: #e2e2e2;
+      }     
+    .title {
+      text-align: center;
+      color: #f68e07;
+      font-weight: 600px;
+      margin-bottom: 15px;
+    }
+
+    .form {
+      padding: 15px;
+      width: 60%;
+      margin:auto;
+    }
+    .form2 {
+      padding: 15px;
+      width: 60%;
+      margin:auto;
+    }
+
+    .form-group {
+      position: relative;
+      padding: 20px 0;
+      margin: auto;
+      max-width: 100%;
+    }
+
+    .form-group input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1.5px solid #e2e2e2;
+      font-size: 18px;
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      color:#a8a6a6;
+    }
+
+    .form-group label {
+      color: #e2e2e2;
+      font-size: 16px;
+      font-weight: 100;
+      position: absolute;
+      pointer-events: none;
+      top: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+      left: 0;
+    }
+
+    .form-group input:valid, 
+    .form-group input:focus {
+      border-bottom-color: #e2e2e2;
+      outline: none;
+    }
+
+    .form-group input:valid + label,
+    .form-group input:focus + label {
+      color: #e2e2e2;
+      font-size: 14px;
+      transform: translateY(0);
+    }
+
+    .submit {
+      background: #2e2e2e;
+      padding: 7px 0;
+      outline: none;
+      font-size: 18px;
+      width: 100%;  
+      margin-top: 10px;
+      text-align: center;
+      cursor: pointer;
+      color: #ffffff;
+      border-radius: 8px;
+      transition: 0.8s;
+      border: 1px solid #3b3b3b;
+    }
+
+
+    .aces {
+      text-align: center;
+      color: hsl(138, 85%, 41%);
+      font-weight: 600;
+    }
+
+
+    .submit:hover {
+      background: #302ce9;
+      color: #ddddd9;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .row a {
+      color: #8685e2;
+    }
+
+    a:hover {
+      color: #8685e2;
+    }
+
+    .container1 {
+      width: 350px;
+      height: auto;
+      margin: auto;
+      padding: 8px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background-color: rgb(49, 48, 48);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      border-radius: 20px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+    }
+
+    .title {
+      text-align: center;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .selecionar input {
+      float: left;
+    }
 
 /*********************************************ATENÇÃO*************************************************/
     .flex3{/*CONTAINER DO MAIN(((MENUS INFERIORES)))*/
@@ -385,6 +544,68 @@ body { /*Configuração layout Grid*/
       display:flex;
       flex-direction: row;
       justify-content: space-around;
+    }
+
+    /*----------------------media query----------------------*/
+
+    #box {
+      display: none;
+    }
+    #box2 {
+        background-color: NONE;
+    }
+    @media(max-width: 1000px) {
+      :root{
+      --tamanhoLogoMobile:60px;
+      --tamanhoMenuMobile:30px; 
+      }     
+            #box {
+                  display: block;
+                  }
+           .flex-item1{/*Item do layout principal do Header(((LOGO)))*/
+              width: 25%;
+              align-self: center;
+            }
+            .flex-item1 a{ /* Item do layout principal do Header(((TEXTO DO LOGO)))*/
+                    text-decoration: none;
+                    color:rgb(254, 255, 255);
+                    font-size: 20px;
+                    text-align:start;
+            }
+            .tamanhoIconesLogo{
+              width:60px;
+            }
+            .tamanhoIconesMenu{
+              width: 30px;
+            }
+            #flexMobile{
+              display:flex;
+              flex-direction: row;
+              align-items: center;
+            }
+            .flex-item2{/*Item do layout principal do Header(((MENUS)))*/
+              width: 75%; 
+              background:var(--corFundo1);
+            }
+            .flex-item3{/*Item do layout principal do Header(((CAMPO DE PESQUISA)))*/
+              display:flex;
+              justify-content: end; 
+              padding-right: 15px;           
+            }
+            #pesquisar1{/*(((CAMPO DE PESQUISA)))*/
+              width: 390px;
+              padding-top: 20px;
+              margin-right: 15px;
+            }
+            #centralizar{
+              display:flex;
+              padding-top: 5px;
+            }   
+    }
+    @media(max-width: 1000px) {
+            #box2 {
+                  display: none;
+                  }
     }
 
 /*FIM DO CSS((((NÃO COLAR CÓDIGO ABAIXO DAQUI)))))*/
