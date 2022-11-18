@@ -5929,3 +5929,13 @@ function closeNav() {
                             function closeNav1() {
                                 document.getElementById("myNav1").style.width = "0%";
                             }
+
+                            //  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO//  6_CADASTRO
+function comparar(){
+  if (document.getElementById("pf").checked){
+       window.location.href = "./cadastro4-cpf.html";
+      }
+  else{
+      window.location.href = "./cadastro3-cnpj.html";
+      }
+  }
