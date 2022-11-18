@@ -232,6 +232,12 @@ body { /*Configuração layout Grid*/
     .adicionar-carrinho{
       margin-left: 50px;
     }
+    .jss232 {
+      padding: 0.5rem;
+      background: #f1f1f1;
+      column-count: 2;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;}
 
 
 /*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
