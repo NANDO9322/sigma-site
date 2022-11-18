@@ -522,6 +522,9 @@ body { /*Configuração layout Grid*/
       float: left;
     }
 
+    .cor-tela-login{
+      color: rgb(150, 149, 149) !important;
+    }
 /*********************************************ATENÇÃO*************************************************/
     .flex3{/*CONTAINER DO MAIN(((MENUS INFERIORES)))*/
       display:flex;
