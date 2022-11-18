@@ -361,8 +361,6 @@ body { /*Configuração layout Grid*/
     .container2 {
       width:30%;
       margin: auto;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
       background-color: rgba(190, 190, 190, 0.1);
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.125);
@@ -370,8 +368,6 @@ body { /*Configuração layout Grid*/
     .container3 {
       width:30%;
       margin:120px auto;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
       background-color: rgb(49, 48, 48);
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.125);
@@ -500,8 +496,6 @@ body { /*Configuração layout Grid*/
       height: auto;
       margin: auto;
       padding: 8px;
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
       background-color: rgb(49, 48, 48);
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.125);
