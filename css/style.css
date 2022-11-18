@@ -480,9 +480,14 @@ body { /*Configuração layout Grid*/
       color: white;
     }
 
+    .black-hover {
+      color: black !important;
+    }
+
     a:hover {
       color: #8685e2;
     }
+
 
     .container1 {
       width: 350px;
