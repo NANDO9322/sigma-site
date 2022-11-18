@@ -232,12 +232,6 @@ body { /*Configuração layout Grid*/
     .adicionar-carrinho{
       margin-left: 50px;
     }
-    .jss232 {
-      padding: 0.5rem;
-      background: #f1f1f1;
-      column-count: 2;
-      border-radius: 5px;
-      margin-bottom: 0.5rem;}
 
 
 /*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
@@ -479,17 +473,19 @@ body { /*Configuração layout Grid*/
     }
 
     .row a {
-      color: white;
+      color: black;
     }
 
-    .black-hover {
-      color: black !important;
-    }
+    .jss232 {
+      padding: 0.5rem;
+      background: #f1f1f1;
+      column-count: 2;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;}
 
     a:hover {
       color: #8685e2;
     }
-
 
     .container1 {
       width: 350px;
@@ -606,10 +602,6 @@ body { /*Configuração layout Grid*/
               display:flex;
               padding-top: 5px;
             }   
-            #close1{
-              color:var(--corMenus);
-              text-decoration: none;
-              }
     }
     @media(max-width: 1000px) {
             #box2 {
