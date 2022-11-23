@@ -163,6 +163,15 @@ body { /*Configuração layout Grid*/
       margin-bottom: -50px;
       /* outline: 1px solid red; */
     }
+
+    .main-container-teste{
+      
+      width:100%;
+      max-width: 990px;
+      margin: auto;
+      /* outline: 1px solid red; */
+    }
+
     .cursor-type{
       cursor: not-allowed;
     }
