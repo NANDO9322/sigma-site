@@ -305,6 +305,12 @@ body { /*Configuração layout Grid*/
       width: 35%;
     }
 
+    .frete-style{
+      background-color: #f1f1f1; 
+      height: 200px; 
+      border-radius: 5px; 
+    }
+
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
     +                                   */
 
