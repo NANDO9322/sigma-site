@@ -236,10 +236,14 @@ body { /*Configuração layout Grid*/
     .flex3 h5{
       font-size: 15px;
       text-align: left;
-      margin-left: 30px;
+      margin-left: 0px;
     }
     .flex3 ul li{
       font-size: 13.5px;
+    }
+    .flex3 div ul{
+      text-align:left;
+      padding: 0;
     }
 
     #toggle-menu:checked ~ .flex3 {
