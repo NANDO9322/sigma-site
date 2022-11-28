@@ -74,7 +74,7 @@ body { /*Configuração layout Grid*/
             top: 0;
             right: 0;
             background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0, 0.5);
+            background-color: rgba(0,0,0, 0.9);
             overflow-x: hidden;
             transition: 0.5s;
 
@@ -504,7 +504,11 @@ body { /*Configuração layout Grid*/
     }
 
     .row a, .row p {
-      color: white;
+      color: rgb(0, 0, 0);
+      font-size:13px;
+    }
+    .row1 a, .row1 p {
+      color: rgb(255, 255, 255);
       font-size:13px;
     }
     .color-top a {
@@ -639,6 +643,16 @@ body { /*Configuração layout Grid*/
               color:var(--corMenus);
               text-decoration: none;
               }  
+            .flex3 h5{
+                font-size: 13px;
+                text-align: left;
+                margin-left: 0px;
+              }
+            .flex3 ul li{
+                font-size: 11px;
+    }
+            .flex4{/*MENUS DO FOOTER*/
+            font-size:10px;
     }
     @media(max-width: 1000px) {
             #box2 {
