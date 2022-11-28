@@ -148,22 +148,7 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 1 (inicial), COLAR AQUI EM BAIXO.deixar alinhado a partir do simbolo de "+"
     +                                   */
-    .back-to-top {
-      color:black; /* alterar cor do botão */
-      position: fixed;
-      z-index: 999;
-      bottom: 2rem; /* posição vertical: quanto maior, mais para cima */
-      right: 1rem; /* posição horizontal: quanto maior, mais para esquerda */
-      display:none;
-      }
-      .back-to-top:active, .back-to-top:focus, .back-to-top:hover {
-      text-decoration: none;
-      color:#afb3b0; /* alterar cor do botão quando o mouse estiver em cima ou mobile */
-      }
-      
-      .back-to-top i {
-      font-size: 3em; /* alterar tamanho do botão */
-      }
+
 
 /*PÁGINA 2 (produtos), COLAR AQUI EM BAIXO.
     +                                   */
