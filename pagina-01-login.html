@@ -47,19 +47,18 @@
     <div class="container1">
       <div class="form">
         <h3 class="title">Login</h3>
-        <form>
+        <form action="pagina-inicial-logado.html" id="form">
           <div class="form-group">
-            <input type="text" required><label>Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuario" id="user" >
           </div>
-          <div class="form-group">
-            <input type="password" required id="senha"><label>Senha</label>
+          <div class="form-group">            
+            <input type="password" name="senha" placeholder="Senha" id="senha">
           </div>
-          <div class="row1">
+          <div class="row">
             <a href="#">Esqueceu a senha</a>
           </div>
-
-          <button type="button" class="submit btn btn-primary" onclick="comparar()">Entrar</button>
-          <div class="row1">
+          <button type="submit" class="submit btn btn-primary" >Entrar</button>
+          <div class="row">
             <p class="cor-tela-login" >Não é cadastrado? <a href="pagina-01-login-confirmar.html">Cadastre-se</a></p>
           </div>
         </form>
@@ -125,6 +124,10 @@
   </div>
 
   </footer>
+  <script src="js/jquery-3.6.1.min.js" ></script> <!--Plugin do Jquery-->
+  <script src="js/jquery.validate.min.js"></script> <!--Validador Jquery-->
+  <script src="js/localization/messages_pt_BR.min.js"></script> <!--Deixa as mensagem em Pt-BR-->
+  <script src="js/validacao.js"></script> <!--As regras aplicadas na validação-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
