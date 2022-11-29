@@ -52,23 +52,23 @@
     <div class="container1">
       <div class="form">
         <h3 class="title">Criar Conta</h3>
-        <form>
+        <form action="pagina-01-login.html" id="form">
           <div class="form-group">
-            <input type="text" required><label>Email</label>
+            <input type="email" name="email" required><label>Email</label>
           </div>
           <div class="form-group">
-            <input type="password" required id="senha"><label>Senha</label>
+            <input type="password"  name="senha" id="senha" required><label>Senha</label>
           </div>
           <div class="form-group">
-            <input type="text" required><label>Nome Completo</label>
+            <input type="text" name="nome" required onkeypress=" return ApenasLetras(event,this);"><label>Nome Completo</label>
           </div>
           <div class="form-group">
-            <input type="number" required onkeypress="$(this).mask('000.000.000-00')"><label>CPF</label>
+            <input type="text" name="cpf" onkeypress="$(this).mask('000.000.000-00');"  required><label>CPF</label>
           </div>
           <div class="form-group">
-            <input type="number" required onkeypress="$(this).mask('(00) 0000-00009')"><label>Telefone</label>
+            <input type="text" name="telefone" onkeypress="$(this).mask('(00) 0000-00009')" required><label>Telefone</label>
           </div>
-          <input type="button" value="Entrar" class="submit btn btn-primary" onclick="validar()">
+          <input type="submit" value="Entrar" class="submit btn btn-primary" >
         </form>
       </div>
     </div>
@@ -131,7 +131,12 @@
   </div>
 
   </footer>
-
+  <script src="js/jquery-3.6.1.min.js" ></script> <!--Plugin do Jquery-->
+  <script src="js/jquery.validate.min.js"></script> <!--Validador Jquery-->
+  <script src="js/localization/messages_pt_BR.min.js"></script> <!--Deixa as mensagem em Pt-BR-->
+  <script src="js/validacao.js"></script> <!--As regras aplicadas na validação-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
