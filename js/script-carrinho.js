@@ -107,7 +107,7 @@ $(document).ready(function () {
         if (oldValue >= max) {
           var newVal = oldValue;
         } else {
-          var newVal = oldValue + 1;
+          var newVal = oldValue + 2;
         }
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
@@ -126,3 +126,36 @@ $(document).ready(function () {
   
     });
   });
+
+  function remove(){
+    let produto = document.getElementById("produto");
+//    produto.removeAttribute("tr");
+    produto.style="visibility: hidden;";
+  }
+
+  function somaitem(){
+    let item = document.getElementById("item1").value;
+    let valor = document.getElementById("valor1");
+    let valorTotal = document.getElementById("item-total");
+
+    console.log(item);
+
+    let total = item * 1899.00;
+
+    console.log(total);
+
+    console.log(valor)
+    valorTotal.innerText = `${total},00`;
+  }
+
+  function AumentaPerc() {
+    var campo = document.getElementById("item1")
+    campo.value= parseInt(campo.value) + 1;
+    }
+
+    function DiminuiPerc() {
+        var campo = document.getElementById("item1")
+        if(campo.value >= 1){
+        campo.value= parseInt(campo.value) - 1;
+        }
+    }
