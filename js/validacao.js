@@ -137,9 +137,7 @@ function verific(){
 }
 
 function confirm(){
-    if ((document.getElementById('credito').checked || document.getElementById('debito').checked)) {
-        /*se radio for selecionado validacao prossegue*/
-    } else {
+    if ((!document.getElementById('credito').checked && !document.getElementById('debito').checked)) {
         alert('Selecione Credito ou Debito!')
     }
 }
