@@ -107,7 +107,7 @@ function paghome() {
         button.parent().parent().find('input').val(newVal);
     });
 
-})(jQuery);
+})//(jQuery);
 
 //3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO//  3_CARRINHO
 
