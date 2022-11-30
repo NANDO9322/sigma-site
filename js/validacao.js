@@ -100,7 +100,8 @@ $("#form").validate({  //chama o formulario por ID
 
         data:{
             minlength:5,
-        }
+        },
+
 },
     messages:{
         cartao: "Número do cartão é obrigatório!",
@@ -121,6 +122,7 @@ $("#form").validate({  //chama o formulario por ID
 
     }
 })
+
 
 
 function verific(){
