@@ -20,7 +20,7 @@ body { /*Configuração layout Grid*/
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
   gap:2px;
   background: var(--corFundo4);
-  padding-bottom:100px;
+  padding-bottom:110px;
 }
 .headerGrid{/*Configuração layout Grid*/
   grid-area: 1/1/3/12;
