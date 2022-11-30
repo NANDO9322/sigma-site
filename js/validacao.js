@@ -37,7 +37,7 @@ $("#form").validate({  //chama o formulario por ID
             minlength: 14 ,
         },
 
-        endereço:{
+        endereco:{
             required: true
         },
 
@@ -93,12 +93,56 @@ $("#form").validate({  //chama o formulario por ID
             minlength: 3,
         },
 
-        ccard:{
+        cartao:{
             required:true,
-            maxlength:16
+            minlength: 16,
         },
-}})
 
+        data:{
+            minlength:5,
+        }
+},
+    messages:{
+        cartao: "Número do cartão é obrigatório!",
+        nome: "É necessário informar o nome",
+        data: "Data inválida",
+        sobrenome: "É necessário informar o sobrenome",
+        gender: "Selecione uma opção:",
+        cpf: "É necessário informar um CPF",
+        endereco: "É necessário informar o endereço",
+        bairro: "É necessário informar o bairro",
+        cep:"É necessário informar o CEP",
+        pais: "Selecione uma opção:",
+        estado: "Selecione uma opção:",
+        cidade: "Selecione uma opção:",
+        telefone:"É necessário informar o número completo no formato (DDD) 99999-9999",
+        email:"É necessário informar um E-mail válido",
+        emailc:"É necessário confirmar o E-mail ",
+
+    }
+})
+
+
+function verific(){
+
+        if (document.getElementById('entrega-01').checked  || document.getElementById('entrega-02').checked ) {
+            window.location.href ="pagina-pagamento-03.html"
+            
+        } else {
+            alert('Selecione uma opção de Frete!')
+            return false
+        }
+
+    
+}
+
+function confirm(){
+    if ((document.getElementById('credito').checked || document.getElementById('debito').checked)) {
+        /*se radio for selecionado validacao prossegue*/
+    } else {
+        alert('Selecione Credito ou Debito!')
+    }
+}
 
 
 /*LINK REFERENCIA:

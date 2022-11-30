@@ -22,8 +22,7 @@
         <!--Container menu pricipakll-->
         <div class="flex-item1">
           <!--lOGO DO SIGMA NO MENU PRINCIPAL-->
-          <a href="pagina-inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo"
-              alt="logo sigma" />Sigma</a>
+          <a href="pagina-inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo"  alt="logo sigma" >Sigma</a>
         </div>
         <div class="flex-item2">
           <!--Container Menus e barra de pesquisa-->
@@ -34,19 +33,16 @@
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <!--ICONE DO LOGIN NO MENU PRINCIPAL-->
-                    <a class="nav-link" href="#"><img src="img/usuario-logado2.jpg"
-                        class="tamanhoIconesMenu" alt="Login de usuário" /><span class="corMenus">Joãozinho</span></a>
+                    <a class="nav-link" href="#"><img src="img/usuario-logado2.jpg" class="tamanhoIconesMenu" alt="Login de usuário"><span class="corMenus">Joãozinho</span></a>
                   </li>
                   <li class="nav-item">
                     <!--ICONE DO LOGIN NO MENU FAVORITOS-->
-                    <a class="nav-link active" aria-current="page" href="#"><img src="img/favoritos.jpeg"
-                        class="tamanhoIconesMenu" alt="favoritos" /><span class="corMenus">Favoritos</span></a>
+                    <a class="nav-link active" aria-current="page" href="#"><img src="img/favoritos.jpeg" class="tamanhoIconesMenu" alt="favoritos" ><span class="corMenus">Favoritos</span></a>
                   </li>
                   <li class="nav-item">
                     <!--ICONE DO LOGIN NO MENU carrinho-->
                     <a class="nav-link active" aria-current="page" href="pagina-carrinho.html"><img
-                        src="img/carrinho.jpeg" class="tamanhoIconesMenu" alt="favoritos" /><span
-                        class="corMenus">Carrinho</span></a>
+                        src="img/carrinho.jpeg" class="tamanhoIconesMenu" alt="favoritos" ><span class="corMenus">Carrinho</span></a>
                   </li>
                 </ul>
               </div>
@@ -76,8 +72,7 @@
         <!--Container menu pricipal PARA CELULAR( E DISPOSITIVOS MENORES)-->
         <div class="flex-item1">
           <!--lOGO DO SIGMA NO MENU PRINCIPAL-->
-          <a href="pagina-inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo"
-              alt="logo sigma" />Sigma</a>
+          <a href="pagina-inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo" alt="logo sigma" >Sigma</a>
         </div>
         <div class="flex-item2">
           <!--Container Menus e barra de pesquisa-->
@@ -92,16 +87,14 @@
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg></span>
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar" />
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar" >
               </div>
             </form>
             <nav class="navbar navbar-expand-lg bg-black">
               <ul id="flexMobile" class="navbar-nav">
                 <li class="nav-item dropdown">
                   <!--ICONE DO CARRINHO NO MENU PRINCIPAL-->
-                  <a href="pagina-carrinho.html" role="button" aria-expanded="false"><img src="img/carrinho.jpeg"
-                      class="tamanhoIconesMenu" alt="carrinho de compras" />
+                  <a href="pagina-carrinho.html" role="button" aria-expanded="false"><img src="img/carrinho.jpeg" class="tamanhoIconesMenu" alt="carrinho de compras" >
                   </a>
                 </li>
                 <li id="myNav1" class="overlay">
@@ -125,8 +118,7 @@
                   <span style="
 												font-size: 30px;
 												cursor: pointer;
-											" onclick="openNav1()"><img src="img/menuHamburgue.jpeg" class="tamanhoIconesMenu"
-                      alt="menu principal" /></span>
+											" onclick="openNav1()"><img src="img/menuHamburgue.jpeg" class="tamanhoIconesMenu" alt="menu principal" ></span>
                 </li>
               </ul>
             </nav>
@@ -177,6 +169,7 @@
           </div>
 
           <!-- acordeon cartao de credito -->
+          <form action="pagina-finalizacao.html" id="form">
           <div class="accordion-item">
             <h2 class="accordion-header" id="card-acordeon">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -189,46 +182,46 @@
               <div class="accordion-body">
                 <div class="d-block my-3">
                   <div class="form-control-plaintext custom-radio">
-                    <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <input id="credito" name="paymentMethod" type="radio" class="custom-control-input">
                     <label class="custom-control-label" for="credito">Cartão de crédito</label>
                   </div>
 
                   <div class="form-control-plaintext custom-radio">
-                    <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <input id="debito" name="paymentMethod" type="radio" class="custom-control-input">
                     <label class="custom-control-label" for="debito">Cartão de débito</label>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <label for="cc-nome" class="form-control-plaintext">Nome no cartão</label>
-                    <input type="text" class="form-control" id="cc-nome" required>
+                    <label for="cc-nome" class="form-control-plaintext" >Nome no cartão</label>
+                    <input type="text" class="form-control" name="nome" id="cc-nome"  onkeypress=" return ApenasLetras(event,this);" required>
 
                   </div>
 
                   <div class="col-md-6 mb-3">
                     <label for="cc-card" class="form-control-plaintext">Número do cartão</label>
-                    <input type="text" class="form-control" id="cc-card" required maxlength="16"
-                      onkeypress="$(this).mask('0000 0000 0000 0000')">
+                    <input type="text" class="form-control" name="cartao" id="cc-card" onkeypress="$(this).mask('0000 0000 0000 0000')" required maxlength="16">
                   </div>
 
                 </div>
                 <div class="row">
                   <div class="col-md-3 mb-3">
                     <label for="cc-expiracao" class="form-control-plaintext">Data de expiração</label>
-                    <input type="text" class="form-control" id="cc-expiracao" required
-                      onkeypress="$(this).mask('00/00/0000')">
+                    <input type="text" class="form-control" name="data" id="cc-expiracao" required onkeypress="$(this).mask('00/00')">
                   </div>
 
                   <div class="col-md-3 mb-3">
                     <label for="cc-cvv" class="form-control-plaintext">CVV</label>
-                    <input type="text" class="form-control" id="cc-cvv" required maxlength="3">
+                    <input type="text" class="form-control" id="cc-cvv"  required maxlength="3">
                   </div>
-                </div>              
+                </div> 
+                <button type="submit" class="btn btn-default botao-pagamento" onclick="confirm()">Verificar</button>
+             
               </div>
             </div>
           </div>
-
+        </form>
           <!-- acordeon boleto -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="boleto-acordeon">
@@ -270,17 +263,19 @@
 
       
 
-      <div class="box-footer">
-        <div class="fa-pull-left">
-            <a class="btn btn-default botao-pagamento" href="pagina-pagamento-03.html">Voltar</a>
+        <div class="box-footer">
+          <div class="fa-pull-left">
+              <a class="btn btn-default botao-pagamento" href="pagina-pagamento-03.html">Voltar</a>
+          </div>
+
+          <div class="fa-pull-right">
+            
+              <a class="btn btn-default botao-pagamento" href="pagina-finalizacao.html">Avançar</a>
+
+          </div>
+
         </div>
-
-        <div class="fa-pull-right">
-            <a class="btn btn-default botao-pagamento" href="pagina-finalizacao.html">Avançar</a>
-        </div>
-
-      </div>
-
+    </div>
     </div>
     </div>
   </main>
@@ -289,7 +284,7 @@
     <div class="main-container2">
 
       <div class="position-relative" id="diminuir">
-        <input id="toggle-menu" type="checkbox" class="d-none" class="teste">
+        <input id="toggle-menu" type="checkbox" class="d-none teste">
         <!-- ultilizado para controlar o estado de aberto e fechado do botao de mais informações -->
         <label for="toggle-menu" class="icon-toggle position-relative">Mapa do Site</label>
         <nav class="flex3">
@@ -343,9 +338,14 @@
 
   </footer>
 
+  <script src="js/jquery-3.6.1.min.js" ></script> <!--Plugin do Jquery-->
+  <script src="js/jquery.validate.min.js"></script> <!--Validador Jquery-->
+  <script src="js/localization/messages_pt_BR.min.js"></script> <!--Deixa as mensagem em Pt-BR-->
+  <script src="js/validacao.js"></script> <!--As regras aplicadas na validação-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
