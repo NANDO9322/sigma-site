@@ -92,13 +92,14 @@ function comparar() {
         window.location.href = "./pagina-01-cadastro-cnpj.html";
     }
 }
+
 $(document).ready(function () {
     jQuery('<div class="quantity-nav"><button class="quantity-button quantity-up">&#xf106;</button><button class="quantity-button quantity-down">&#xf107</button></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function () {
       var spinner = jQuery(this),
           input = spinner.find('input[type="number"]'),
-          btnUp = spinner.find('.quantity-up'),
-          btnDown = spinner.find('.quantity-down'),
+          btnUp = spinner.find('#btn-mais'),
+          btnDown = spinner.find('.#btn-menos'),
           min = input.attr('min'),
           max = input.attr('max');
   
@@ -107,7 +108,7 @@ $(document).ready(function () {
         if (oldValue >= max) {
           var newVal = oldValue;
         } else {
-          var newVal = oldValue + 2;
+          var newVal = oldValue + 1;
         }
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
@@ -138,7 +139,7 @@ $(document).ready(function () {
     let valor = document.getElementById("valor1");
     let valorTotal = document.getElementById("item-total");
 
-    console.log(item);
+    console.log(item1);
 
     let total = item * 1899.00;
 
