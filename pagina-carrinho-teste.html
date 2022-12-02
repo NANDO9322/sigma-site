@@ -129,77 +129,73 @@
       <div>
         <form>
 
-          <div class="table-responsive">
-            <div class="container-fluid pt-5">
-              <div class="row px-xl-5">
-                <div class="col-lg-8 table-responsive mb-5">
-                  <table class="table text-center mb-0">
-                    <thead class="bg-secondary text-dark">
-                      <tr style="background-color: aliceblue;">
-                        <th></th>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
-                        <th>Total</th>
-                      </tr>
-                    </thead>
-                    <tbody class="align-middle">
-                      <tr id="produto">
-                        <td class="align-middle "><a href="pagina-carrinho-vazio-logado.html"><i class="fa fa-trash"></i></a></td>
-                        <td class="align-middle"><img src="img/pagina-produto/produto-01.jpg" alt="" style="width: 50px;"> Console Microsoft Xbox Series S, 512GB</td>
-                        <td class="align-middle" id="valor1">1.899,00</td>
-                        <td class="align-middle">
+					<div class="table-responsive">
+						<div class="container-fluid pt-5">
+							<div class="row px-xl-5">
+								<div class="col-lg-8 table-responsive mb-5 largura-tabela">
+									<table class="table text-center mb-0">
+										<thead class="bg-secondary text-dark">
+											<tr style="background-color: aliceblue;">
+												<th></th>
+												<th>Produto</th>
+												<th>Preço</th>
+												<th>Quantidade</th>
+												<th colspan="2">Total</th>
+											</tr>
+										</thead>
+										<tbody class="align-middle">
+											<tr id="produto">
+												<td class="align-middle "><a href="pagina-carrinho-vazio-logado.html"><i
+															class="fa fa-trash"></i></a></td>
+												<td class="align-middle"><img src="img/pagina-produto/produto-01.jpg"
+														alt="" style="width: 50px;"> Console Microsoft Xbox Series S,
+													512GB</td>
+												<td class="align-middle largura-linha" id="valor1">R$ 1.899,00</td>
+												<td class="align-middle">
+													 
+													<div id="product_B_form" class="quantity-nav">
+														<button class="btn btn-default btn-subtract" type="button" onclick="DiminuiPerc();somaitem()">-</button>
+														<input type="number" class="no-padding text-center item-quantity" id="item1" min="1" value="1" disabled style="width: 25%; text-align: center;">						  
+														<button class="btn btn-default btn-add" type="button" onclick="AumentaPerc();somaitem()">+</button>
+													</div>
 
 
-                          <div class="number-input">
-                            <div>
-                              <button type="button" class="btn minus1" id="btn-menos" onclick="DiminuiPerc();somaitem()">-</button>
-                              <input min="1" name="quantity" value="1" type="number" id="item1" disabled style="width: 25%; text-align: center;">
-                              <button type="button" class="btn minus1" id="btn-mais" onclick="AumentaPerc();somaitem()">+</button>
-                            </div>
-                          </div>
+												</td>
+												<td class="align-middle largura-linha" id="item-total">R$ 1.899,00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-lg-4">
+									<form class="mb-5" action="">
+									</form>
+									<div class="card border-secondary mb-5">
+										<div class="card-header teste-teste border-0 carrinho-pai">
+											<h4 class="font-weight-semi-bold m-0 text-center">Resumo</h4>
+										</div>
+										<div class="card-body">
+											<div class="d-flex justify-content-between mb-3 pt-1">
+												<h6 class="font-weight-medium">Subtotal</h6>
+												<h6 class="font-weight-medium" id="total-h6">R$ 1.899,00</h6>
+											</div>
 
-                          <script>
+										</div>
+										<div class="card-footer border-secondary bg-transparent">
+											<div class="d-flex justify-content-between mt-2">
+												<h5 class="font-weight-bold">Total</h5>
+												<h5 class="font-weight-bold" id="total-h5">R$1.899,00</h5>
+											</div>
+											<div class="carrinho-pai mt-3 caixinha-pai">
+												<button class="btn btn-block btn-primary py-3">Prosseguir ao
+													pagamento</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                            
-                          </script>
-
-
-                        </td>
-                        <td class="align-middle" id="item-total">1.899,00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="col-lg-4">
-                  <form class="mb-5" action="">
-                  </form>
-                  <div class="card border-secondary mb-5">
-                    <div class="card-header teste-teste border-0 carrinho-pai">
-                      <h4 class="font-weight-semi-bold m-0">Sumário de Carrinho</h4>
-                    </div>
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between mb-3 pt-1">
-                        <h6 class="font-weight-medium">Subtotal</h6>
-                        <h6 class="font-weight-medium">R$1.899,00</h6>
-                      </div>
-
-                    </div>
-                    <div class="card-footer border-secondary bg-transparent">
-                      <div class="d-flex justify-content-between mt-2">
-                        <h5 class="font-weight-bold">Total</h5>
-                        <h5 class="font-weight-bold">R$1.899,00</h5>
-                      </div>
-                      <div class="carrinho-pai mt-3">
-                        <button class="btn btn-block btn-primary py-3 central">Prosseguir ao pagamento</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        </form>
+				</form>
       </div>
 
     </div>

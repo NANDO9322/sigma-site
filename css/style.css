@@ -283,7 +283,18 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
     +                                   */      
-
+    .largura-tabela {
+      width: 46rem;
+    }
+    
+    .largura-linha {
+      width: 7rem;
+    }
+    
+    .caixinha-pai {
+      display: flex;
+      justify-content: center;
+    }
 /*PÁGINA 4 (pagamento), COLAR AQUI EM BAIXO.
     +                                   */      
     .elemento-pai{
