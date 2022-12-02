@@ -13,9 +13,6 @@
 
 
 }
-.teste-teste{
-  background: var(--corFundo4) !important;
-}
 body { /*Configuração layout Grid*/
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   height: 100%;
@@ -64,49 +61,76 @@ body { /*Configuração layout Grid*/
           justify-content: flex-end;
           margin-right: 15px;
         }
-        .centralizacao{/*(((ICONE MENU HAMBURGUER)))*/
-          align-self: center;
-          font-size:30px;
-          cursor:pointer
-        }
-            .overlay {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0, 0.9);
-            overflow-x: hidden;
-            transition: 0.5s;
-
-            }
-            .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: left;
-            margin-top: 30px;
-            }
-            .overlay li a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 20px;
-            color:var(--corMenus);
-            display: block;
-            transition: 0.3s;
-            }
-            #close{
-            color:var(--corMenus);
-            text-decoration: none;
-            }
-            .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 30px;
-            }
+        .alinhamentoMenus{
+       display:flex;
+       align-items: center;
+       margin-right: 30px;
+       }
+            *,
+            /*importante*/
+           *::after {
+             box-sizing: border-box;
+              
+           }
+           .overlaynovo{
+             position: fixed;
+                       top: 1px;
+                       right: 0;
+           }
+           .sidebar {
+             width: 220px;
+             padding: 20px;
+             transition: transform .3s;
+             background: #2f323e;
+             height: 100vh;
+           
+             z-index: 2;
+           }
+           
+           .sidebar.isOpen {
+             transform: translateX(220px);
+           }
+           
+           .button {
+             cursor: pointer;
+                        
+           }
+           
+           .button img{
+             width: 30px;
+             margin: 0px 0px 0px -60px;  
+           }           
+           .overlay1 {  /*importante não remover*/
+             list-style: none;
+             
+           }
+           
+           .overlay1 li a {
+             position: relative;
+             display: block;
+             margin-bottom: 5px;
+             padding: 16px 0 16px 10px;
+             color: #fff;
+             border-radius: 4px;
+             cursor: pointer;
+             text-decoration: none;
+           }
+           
+           /* classes do elemento que vai abrir por baixo da navbar e se clicado fecha o menu */
+           .fechaMenu {
+             width: 100%;
+             height: 100%;
+             background-color: rgba(0,0,0,.3);
+             position: fixed;
+             top: 0;
+             left: 0;
+           
+             z-index: 1;
+           }
+           .isClose {
+             display: none;
+           }
+           
 
         .flex-item3{/*Item do layout principal do Header(((CAMPO DE PESQUISA)))*/
           display:flex;
@@ -260,14 +284,6 @@ body { /*Configuração layout Grid*/
 
 /*PÁGINA 3 (carrinho), COLAR AQUI EM BAIXO.
     +                                   */      
-    .carrinho-pai{
-      display: flex !important;
-      justify-content: center;
-    }
-    .central{
-
-    }
-
 
 /*PÁGINA 4 (pagamento), COLAR AQUI EM BAIXO.
     +                                   */      
@@ -333,7 +349,6 @@ body { /*Configuração layout Grid*/
       height: 200px; 
       border-radius: 5px; 
     }
-    
 
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
     +                                   */
@@ -632,6 +647,7 @@ body { /*Configuração layout Grid*/
               display:flex;
               flex-direction: row;
               align-items: center;
+              
             }
             .flex-item2{/*Item do layout principal do Header(((MENUS)))*/
               width: 75%; 
@@ -645,7 +661,7 @@ body { /*Configuração layout Grid*/
             #pesquisar1{/*(((CAMPO DE PESQUISA)))*/
               width: 390px;
               padding-top: 20px;
-              margin-right: 15px;
+              margin-right: 10px;
             }
             #centralizar{
               display:flex;
