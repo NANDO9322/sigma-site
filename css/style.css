@@ -40,6 +40,7 @@ body {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .flex-item1 {
   /*Item do layout principal do Header(((LOGO)))*/
   width: 45%;
@@ -203,6 +204,123 @@ body {
 .link-footer:hover {
   color: white;
 }
+=======
+        }
+        .flex-item2{/*Item do layout principal do Header(((MENUS)))*/
+          width: 65%; 
+          background:var(--corFundo1);
+        }
+        #flex-item2-1{/*SubItem do layout principal do Header(((NAV)))*/
+          display:flex;
+          justify-content: flex-end;
+          margin-right: 15px;
+        }
+        .alinhamentoMenus{
+       display:flex;
+       align-items: center;
+       margin-right: 30px;
+       }
+            *,
+            /*importante*/
+           *::after {
+             box-sizing: border-box;
+              
+           }
+           .overlaynovo{
+             position: absolute;
+                       top: 1px;
+                       right: 0;
+           }
+           .sidebar {
+             width: 220px;
+             padding: 20px;
+             transition: transform .3s;
+             background: #2f323e;
+             height: 100vh;
+           
+             z-index: 1;
+           }
+           
+           .sidebar.isOpen {
+             transform: translateX(220px);
+           }
+           
+           .button {
+             cursor: pointer;
+                        
+           }
+           
+           .button img{
+             width: 30px;
+             margin: 0px 0px 0px -60px;  
+           }           
+           .overlay1 {  /*importante não remover*/
+             list-style: none;
+             
+           }
+           
+           .overlay1 li a {
+             position: relative;
+             display: block;
+             margin-bottom: 5px;
+             padding: 16px 0 16px 10px;
+             color: #fff;
+             border-radius: 4px;
+             cursor: pointer;
+             text-decoration: none;
+           }
+           
+           /* classes do elemento que vai abrir por baixo da navbar e se clicado fecha o menu */
+           .fechaMenu {
+             width: 100%;
+             height: 100%;
+             background-color: rgba(0,0,0,.3);
+             position: fixed;
+             top: 0;
+             left: 0;
+           
+             z-index: 1;
+           }
+           .isClose {
+             display: none;
+           }
+           
+
+        .flex-item3{/*Item do layout principal do Header(((CAMPO DE PESQUISA)))*/
+          display:flex;
+          justify-content: end;
+        }
+        #pesquisar{/*(((CAMPO DE PESQUISA)))*/
+          width: 390px;
+          margin-right: 20px;
+        }
+        .corMenus{/*(((COR DOS TEXTOS DO MENU PRINCIPAL)))*/
+          color: var(--corMenus);
+        }
+        .fundoCadastro{
+          grid-area: 4/1/8/12;
+          background: var(--corFundo2);
+          font-size: 14px;
+          color: black;
+          padding: 10px;
+          margin:1px;
+          background: var(--corFundo4);
+         }
+        .mainGrid{/*Configuração layout Grid*/
+          grid-area: 4/1/8/12;
+          background: var(--corFundo2);
+          min-height: 403px;
+          color: black;
+          padding: 10px;
+          margin-bottom: 10px;
+          z-index:-1;
+        }
+       
+        .link-footer{
+          color: white;
+          text-decoration: none;
+        }
+>>>>>>> f2be52cbe0ab448775f3f47d9e286b8b25614301
 
 /*********************************************ATENÇÃO*************************************************/
 /*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI//*COLAR O SEU MAIN AQUI/*/
@@ -509,11 +627,34 @@ button a {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+<<<<<<< HEAD
 .flexBot {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+=======
+    .form {
+      padding: 15px;
+      width: 70%;
+      margin:auto;
+    }
+    .formCadastro{
+      display:flex;
+      width: 700px;
+      margin: auto;
+    }
+    .form2{
+      width:400px;
+      margin:auto;
+      padding: auto;
+    }
+    .form2 {
+      padding: 15px;
+      width: 70%;
+      margin:auto;
+    }
+>>>>>>> f2be52cbe0ab448775f3f47d9e286b8b25614301
 
 }
 
