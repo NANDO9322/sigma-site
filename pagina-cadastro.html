@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Faça seu cadastr | Sigma</title>
+	<link type="image/png" sizes="96x96" rel="icon" href="img/favicon.svg">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+	<header class="headerGrid">
+		<div id="box2">
+			<div class="flex1">
+				<!--Container menu pricipal-->
+				<div class="flex-item1">
+					<!--lOGO DO SIGMA NO MENU PRINCIPAL-->
+					<a href="pagina-inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo" alt="logo sigma">Sigma</a>
+				</div>
+				<div class="flex-item2">
+					<!--Container Menus e barra de pesquisa-->
+					<div>
+						<!--CONTÊM ICONES DO LOGIN, FAVORISTOS, CARRINHO, MENU HAMBURGUER DO MENU PRINCIPAL-->
+						<nav class="navbar navbar-expand-lg bg-black">
+							<div id="flex-item2-1" class="collapse navbar-collapse">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<!--ICONE DO LOGIN NO MENU PRINCIPAL-->
+										<a class="nav-link" href="pagina-01-login.html"><img src="img/usuario.jpeg"
+												class="tamanhoIconesMenu" alt="Login de usuário"><span class="corMenus">Login</span></a>
+									</li>
+									<li class="nav-item">
+										<!--ICONE DO LOGIN NO MENU FAVORITOS-->
+										<a class="nav-link active" aria-current="page" href="#"><img src="img/favoritos.jpeg"
+												class="tamanhoIconesMenu" alt="favoritos"><span class="corMenus">Favoritos</span></a>
+									</li>
+									<li class="nav-item">
+										<!--ICONE DO LOGIN NO MENU carrinho-->
+										<a class="nav-link active" aria-current="page" href="pagina-carrinho.html"><img
+												src="img/carrinho.jpeg" class="tamanhoIconesMenu" alt="favoritos"><span
+												class="corMenus">Carrinho</span></a>
+									</li>
+									<li id="myNav" class="overlay">
+										<!--ICONE DO MENU HARBURGUER NO MENU PRINCIPAL-->
+										<a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
+										<ul class="overlay-content">
+											<li><a href="pagina-inicial.html">Início</a></li>
+											<li><a href="#">Minha Conta</a></li>
+											<li><a href="#">Meus Pedidos</a></li>
+											<li><a href="#">Favoritos</a></li>
+											<li><a href="pagina-carrinho.html">Carrinho</a></li>
+										</ul>
+									</li>
+									<li class="centralizacao">
+										<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/menuHamburgue.jpeg"
+												class="tamanhoIconesMenu" alt="menu principal"></span>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="flex-item3">
+						<!--BARRA DE PESQUISA DO MENU PRINCIPAL-->
+						<form id="pesquisar">
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroup-sizing-sm"><svg xmlns="http://www.w3.org/2000/svg"
+											width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+											<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+										</svg></span>
+								</div>
+								<input type="text" class="form-control" aria-label="Sizing example input"
+									aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="box">
+			<div class="flex1">
+				<!--Container menu pricipal PARA CELULAR( E DISPOSITIVOS MENORES)-->
+				<div class="flex-item1">
+					<!--lOGO DO SIGMA NO MENU PRINCIPAL-->
+					<a href="1_Inicial.html"><img src="img/logo13.jpeg" class="tamanhoIconesLogo" alt="logo sigma">Sigma</a>
+				</div>
+				<div class="flex-item2">
+					<!--Container Menus e barra de pesquisa-->
+					<div class="flex-item3">
+						<!--BARRA DE PESQUISA DO MENU PRINCIPAL-->
+						<form id="pesquisar1">
+							<div class="input-group input-group-sm mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+											<path
+												d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+										</svg></span>
+								</div>
+								<input type="text" class="form-control" aria-label="Sizing example input"
+									aria-describedby="inputGroup-sizing-sm" placeholder="Digite aqui para pesquisar">
+							</div>
+						</form>
+						<nav class="navbar navbar-expand-lg bg-black">
+							<ul id="flexMobile" class="navbar-nav">
+								<li class="nav-item dropdown">
+									<!--ICONE DO CARRINHO NO MENU PRINCIPAL-->
+									<a href="3_carrinho.html" role="button" aria-expanded="false"><img src="img/carrinho.jpeg"
+											class="tamanhoIconesMenu" alt="carrinho de compras">
+									</a>
+								</li>
+								<li id="myNav1" class="overlay">
+									<!--ICONE DO MENU HARBURGUER NO MENU PRINCIPAL-->
+									<a href="javascript:void(0)" class="closebtn" id="close1" onclick="closeNav1()">&times;</a>
+									<ul class="overlay-content">
+										<li><a href="pagina-inicial.html">Início</a></li>
+										<li><a href="#">Minha Conta</a></li>
+										<li><a href="#">Meus Pedidos</a></li>
+										<li><a href="#">Favoritos</a></li>
+										<li><a href="pagina-carrinho.html">Carrinho</a></li>
+									</ul>
+								</li>
+								<li>
+									<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><img src="img/menuHamburgue.jpeg"
+											class="tamanhoIconesMenu" alt="menu principal"></span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="mainGrid" style="width: 90%; display: flex; justify-self: center; background: none ; ">
+		<div class="main-container">
+
+
+			<div style="color: aliceblue;">
+				<form action="pagina-pagamento-02.html" class="content position-relative" id="form">
+					<!-- linha -->
+					<div class="col">
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="nome">Nome *</label>
+								<input type="text" class="form-control" name="nome" id="nome"
+									onkeypress=" return ApenasLetras(event,this);" required>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="sobrenome">Sobrenome</label>
+								<input type="text" class="form-control" name="sobrenome" id="sobrenome"
+									onkeypress="return ApenasLetras(event,this);" required>
+							</div>
+						</div>
+					</div>
+
+					<!-- linha -->
+					<div class="col">
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="gender">Gênero</label>
+								<Select class="form-control" name="gender" id="gender">
+									<option value="">Selecione</option>
+									<option value="1">Masculino</option>
+									<option value="2">Feminino</option>
+									<option value="3">Outro</option>
+									<option value="4">Prefiro não dizer</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="cpf">CPF *</label>
+								<input type="text" class="form-control" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00');"
+									required>
+							</div>
+						</div>
+					</div>
+
+					<!-- linha -->
+					<div class="col">
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="endereco">Endereço *</label>
+								<input type="text" class="form-control" name="endereco" id="endereco" required>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="bairro">Bairro *</label>
+								<input type="text" class="form-control" name="bairro" id="bairro"
+									onkeypress="return ApenasLetras(event,this);" required>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="codigo-postal">CEP *</label>
+								<input type="text" class="form-control" name="cep" id="codigo-postal"
+									onkeypress="$(this).mask('00.000-000')" required>
+							</div>
+						</div>
+					</div>
+
+					<!-- linha -->
+					<div class="col">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="form-control-plaintext">
+									<label class="font-tamanho" for="pais">País *</label>
+									<select class="form-control" name="pais" id="pais">
+										<option value="" selected>Selecione</option>
+										<option value="brasil">Brasil</option>
+										<option value="eua">Estados Unidos</option>
+										<option value="mexico">Mexico</option>
+										<option value="alemanha">Alemanha</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="form-control-plaintext">
+									<label class="font-tamanho" for="estado">Estado *</label>
+									<select class="form-control" name="estado" id="estado">
+										<option value="">Selecione</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="col-sm-3">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="cidade">Cidade *</label>
+								<select class="form-control" name="cidade" id="cidade"></select>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="phone">Telefone</label>
+								<input type="text" class="form-control" name="telefone" id="phone"
+									onkeypress="$(this).mask('(00) 0000-00009')">
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="email">E-Mail *</label>
+								<input type="email" class="form-control" name="email" id="email" required>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="form-control-plaintext">
+								<label class="font-tamanho" for="confirmar-email">Confirmar E-mail *</label>
+								<input type="email" class="form-control" id="confirmar-email" required>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn btn-default botao-pagamento">Cadastrar</button>
+					</div>
+
+
+				</form>
+
+			</div>
+		</div>
+		</div>
+
+	</main>
+
+	<footer class="footerGrid fixed-bottom">
+		<div class="main-container2">
+
+			<div class="position-relative" id="diminuir">
+				<input id="toggle-menu" type="checkbox" class="d-none teste">
+				<!-- ultilizado para controlar o estado de aberto e fechado do botao de mais informações -->
+				<label for="toggle-menu" class="icon-toggle position-relative">Mapa do Site</label>
+				<nav class="flex3">
+					<div>
+						<h5>Sobre</h5>
+						<ul>
+							<li> Sigma Hardware</li>
+						</ul>
+					</div>
+					<div>
+						<h5>Contato</h5>
+						<ul>
+							<li>Comprar</li>
+							<li>Vender</li>
+							<li>Solução de Problemas</li>
+							<li>Segurança</li>
+						</ul>
+					</div>
+					<div>
+						<h5>Redes Sociais</h5>
+						<ul>
+							<li>Twiter</li>
+							<li>Facebook</li>
+							<li> <a class="link-footer" href="https://instagram.com/sigmahardware?igshid=ZmRlMzRkMDU=">
+									Instagram </a>
+							</li>
+							<li>Youtube</li>
+						</ul>
+					</div>
+					<div>
+						<h5>Minha Conta</h5>
+						<ul>
+							<li>Resumo</li>
+							<li>Favoritos</li>
+							<li>Vender</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="main-container">
+			<ul class="flex4">
+				<li class="listas">Termos e condições</li>
+				<li class="listas">Como cuidamos de sua privacidade</li>
+				<li class="listas">Contato</li>
+				<li class="listas">Informações sobre seguros</li>
+			</ul>
+
+			<p class="text-center mt-3 mb-1 small"> Copyright © 2022 LTDA </p>
+		</div>
+
+	</footer>
+
+
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<!--Plugin do Jquery-->
+	<script src="js/jquery.validate.min.js"></script>
+	<!--Validador Jquery-->
+	<script src="js/localization/messages_pt_BR.min.js"></script>
+	<!--Deixa as mensagem em Pt-BR-->
+	<script src="js/validacao.js"></script>
+	<!--As regras aplicadas na validação-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script> window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>') </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="js/script-pagamentos.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
