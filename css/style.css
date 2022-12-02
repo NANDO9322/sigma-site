@@ -21,6 +21,7 @@ body { /*Configuração layout Grid*/
   gap:2px;
   background: var(--corFundo4);
   padding-bottom:110px;
+  z-index:-2;
 }
 .headerGrid{/*Configuração layout Grid*/
   grid-area: 1/1/3/12;
@@ -369,12 +370,16 @@ body { /*Configuração layout Grid*/
       width: 100%;
       height: auto;
       margin:auto;
+      background-color: transparent;
+    }
+    .fundoFinalizacao{
+      background-color: transparent;
     }
     .borda{/*borda do conteúdo central(form)*/
       background:var(--corFundo2);
-      width: 100%;
       height: auto;
       padding: 50px 0px 0 0px;
+      background-color:rgba(255, 255, 255, 0.05);
     }
     .flex1Finalizacao form div{/*alinhamento da imagem, textos e botões ao centro*/
       margin: auto;
@@ -384,15 +389,18 @@ body { /*Configuração layout Grid*/
     
     }
     #imagem{/*tamanho imagem*/
-      width: 150px;
+      width: 10px;
       margin:auto;
-    }         
+    } 
+        
     #tamanho{/*tamanho da fonte do texto*/
       height: 200px;
       padding-top: 10px;
-      background-color: #f1f1f1;
+      background-color:rgba(0, 0, 0, 0.9);
       text-align: center;
-      font-size:16px;
+      font-size:20px;
+      color:#e2e2e2;
+      border-radius: 10px;
     }
     #verMinhasCompras{/*botão ver em minhas compras*/
       background:var(--corBotao);
