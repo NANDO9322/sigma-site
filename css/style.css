@@ -466,16 +466,6 @@ body { /*Configuração layout Grid*/
       width: 70%;
       margin:auto;
     }
-    .formCadastro{
-      display:flex;
-      width: 700px;
-      margin: auto;
-    }
-    .form2{
-      width:400px;
-      margin:auto;
-      padding: auto;
-    }
     .form2 {
       padding: 15px;
       width: 70%;
