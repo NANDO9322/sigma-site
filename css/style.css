@@ -334,6 +334,10 @@ body { /*Configuração layout Grid*/
       border-radius: 5px; 
     }
     
+    .margin-elevada{
+      margin-top: 4rem;
+      background: none;
+    }
 
 /*PÁGINA 5 (finalização), COLAR AQUI EM BAIXO.
     +                                   */
