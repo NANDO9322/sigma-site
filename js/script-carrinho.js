@@ -93,29 +93,40 @@ function comparar() {
     }
 }
 
-// product B
-var minus_B = document.querySelector("#product_B_form .btn-subtract")
-var add_B = document.querySelector("#product_B_form .btn-add");
-var quantity_B = document.querySelector("#product_B_form .item-quantity");
-
-// includes button minus disablement if at minimum or below
-const minimum = 1;
-
-minus_B.addEventListener("click", function(){
-    if (quantity_B.value <= minimum) {
-      minus_B.disabled = true;
-      return; // return to avoid decrementing
-    } else {
-      minus_B.disabled = false;
-    }
-});
-
-add_B.addEventListener("click", function() {
-    if (quantity_B.value > minimum) {
-      minus_B.disabled = false;
-    }
-});
-
+$(document).ready(function () {
+    jQuery('<div class="quantity-nav"><button class="quantity-button quantity-up">&#xf106;</button><button class="quantity-button quantity-down">&#xf107</button></div>').insertAfter('.quantity input');
+    jQuery('.quantity').each(function () {
+      var spinner = jQuery(this),
+          input = spinner.find('input[type="number"]'),
+          btnUp = spinner.find('#btn-mais'),
+          btnDown = spinner.find('.#btn-menos'),
+          min = input.attr('min'),
+          max = input.attr('max');
+  
+      btnUp.click(function () {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+  
+      btnDown.click(function () {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+  
+    });
+  });
 
   function remove(){
     let produto = document.getElementById("produto");
@@ -127,21 +138,15 @@ add_B.addEventListener("click", function() {
     let item = document.getElementById("item1").value;
     let valor = document.getElementById("valor1");
     let valorTotal = document.getElementById("item-total");
-    let totalResumo = document.getElementById("total-h6")
-    let totalResumo2 = document.getElementById("total-h5")
 
+    console.log(item1);
 
-    //console.log(item1);
-
-    if(item >= 1){
-    }
     let total = item * 1899.00;
-    //console.log(total);
-    //console.log(valor)
 
-    valorTotal.innerText = `R$ ${total},00`;
-    totalResumo.innerText = `R$ ${total},00`
-    totalResumo2.innerText = `R$ ${total},00`
+    console.log(total);
+
+    console.log(valor)
+    valorTotal.innerText = `${total},00`;
   }
 
   function AumentaPerc() {
